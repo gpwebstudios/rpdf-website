@@ -1,0 +1,32 @@
+.infoTimeline {
+
+
+  .imageWrapper {
+    max-width: 575px;
+  }
+
+  .sectionDescription {
+    max-width: 520px;
+    color: #4E5358;
+  }
+
+  .timelineDotsContainer {
+    position: absolute;
+  }
+
+
+
+}
+
+@media (min-width: 780px) {
+  .infoTimeline {
+    background-image: url("../../public/timeline-dots.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 80%;
+  }
+
+  .colOrderFirst {
+    order: -1;
+  }
+}

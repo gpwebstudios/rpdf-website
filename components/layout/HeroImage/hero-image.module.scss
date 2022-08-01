@@ -1,0 +1,31 @@
+.heroImageContainer {
+  height: 50vh;
+  overflow: hidden;
+  position: relative;
+  background-image: linear-gradient(to left, rgba(245, 246, 252, 0.25), rgba(35, 87, 142, 0.9));
+
+  span {
+    position: relative;
+    // z-index: -1;
+  }
+
+  h1 {
+    z-index: 2;
+    font-size: 3rem;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .heroImageContainer {
+    height: 40vh;
+  }
+}
+
+.heroGradient {
+  background: linear-gradient(to left, rgba(245, 246, 252, 0.25), rgba(35, 87, 142, 0.9));
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}

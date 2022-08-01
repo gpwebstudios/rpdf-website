@@ -1,0 +1,27 @@
+.donateContainer {
+  max-width: 1530px;
+
+  .donateRow {
+    background-color: #1A375B;
+  }
+
+  .donateDescription {
+    color: white !important;
+
+    svg {
+      height: 2.5em;
+      width: 2.5em;
+      fill: #F8B513;
+    }
+
+    div {
+      max-width: 575px;
+      margin: auto;
+    }
+
+  }
+
+  .imageWrapper {
+    max-width: 766px;
+  }
+}
