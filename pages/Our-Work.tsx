@@ -44,13 +44,15 @@ const OurWork = () => {
 
 
         <div className={styles.center}>
-          <svg className={styles.svg} width="310" height="30" strokeWidth="3" xmlns="http://www.w3.org/2000/svg">
+          {/* <svg className={styles.svg} width="310" height="30" strokeWidth="3" xmlns="http://www.w3.org/2000/svg">
             <path d="M 10 10 L 300 10" stroke="#23578E" />
-          </svg>
+          </svg> */}
+          <hr className={styles.hr}/>
           <Image src={logo} alt="shield logo" className="pt-3 pb-3" />
-          <svg className={styles.svg} width="310" height="30" strokeWidth="3" xmlns="http://www.w3.org/2000/svg">
+          {/* <svg className={styles.svg} width="310" height="30" strokeWidth="3" xmlns="http://www.w3.org/2000/svg">
             <path d="M 10 10 L 300 10" stroke="#23578E" />
-          </svg>
+          </svg> */}
+          <hr className={styles.hr}/>
         </div>
 
         <section className={`${styles.section} container-fluid`}>
