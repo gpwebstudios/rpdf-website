@@ -20,7 +20,7 @@ const pageData = [
     imageSrc: tl2,
     description: "The RPDF funds critical equipment and initiatives designed to support a thriving community.",
     buttonText: "Our Work",
-    btnHref: '/our-work'
+    btnHref: '/Our-Work'
 
   },
   {
@@ -33,7 +33,7 @@ const pageData = [
     imageSrc: tl4,
     description: "Take a look behind the badge and meet the inspiring officers who work tirelessly to protect our community.",
     buttonText: "The Faces of The RPD",
-    btnHref: '/meet-rpd'
+    btnHref: '/Meet-RPD'
   },
 ]
 

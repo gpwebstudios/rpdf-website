@@ -6,8 +6,8 @@ import styles from "./navbar.module.scss";
 
 const navData = [
   { linkText: "About Us", href: '/about' },
-  { linkText: "Our Work", href: '/our-Work' },
-  { linkText: "Meet the RPD", href: '/meet-rpd' },
+  { linkText: "Our Work", href: '/Our-Work' },
+  { linkText: "Meet the RPD", href: '/Meet-RPD' },
   { linkText: "Contact", href: '#contactForm' },
 
 
