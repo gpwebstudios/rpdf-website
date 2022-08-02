@@ -8,11 +8,11 @@ $theme-colors: (
   "light": #f5f5f5,
   "dark": #001738,
 );
+$modal-content-bg: transparent;
+
 
 @import "/node_modules/bootstrap/scss/bootstrap.scss";
 @import "./embla.scss";
-
-
 
 html,
 body {
@@ -20,7 +20,6 @@ body {
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
   background-color: #F8F9FA;
-
 }
 
 h1,
@@ -43,7 +42,8 @@ a {
     color: #1A375B !important;
     transition: none;
 
-    &:hover, a:hover {
+    &:hover,
+    a:hover {
       border-bottom: 2px solid #ced4da;
     }
   }
@@ -216,4 +216,12 @@ a {
     }
 
   }
+}
+
+.modal {
+  background: transparent !important;
+}
+
+.modal-content {
+  border: 0;
 }

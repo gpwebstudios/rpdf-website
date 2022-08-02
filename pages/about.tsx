@@ -1,14 +1,12 @@
 import Image from "next/image";
+import React from "react";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/layout/Footer";
 import Navbar from "../components/layout/Navbar";
-import videoPlaceholder from "../public/video-placeholder.png";
-import aboutUs from "../public/aboutUs.png"
-import placeholderAvatar from "../public/boardMembers/rpdfPlaceholder.png"
-import styles from "../styles/About.module.scss"
-
+import VideoModal from "../components/layout/VideoModal";
+import aboutUs from "../public/aboutUs.png";
 import BrendaGibson from "../public/boardMembers/Brenda-Gibson.png";
-import ChandlerSpaulding from "../public/boardMembers/Chandler-Spaulding.png"
+import ChandlerSpaulding from "../public/boardMembers/Chandler-Spaulding.png";
 import ChristineCraig from "../public/boardMembers/Christine-Craig.png";
 import CurryHuskes from "../public/boardMembers/Curry-Huskes.png";
 import GaffneyGunter from "../public/boardMembers/Gaffney-Gunter.png";
@@ -17,8 +15,11 @@ import KristyeBrackett from "../public/boardMembers/Kristye-Brackett.png";
 import LarryBarbour from "../public/boardMembers/Larry-Barbour.png";
 import LaurieGeer from "../public/boardMembers/Laurie-Geer.png";
 import MauriceSmith from "../public/boardMembers/Maurice-Smith.png";
-import ScottDuckworth from "../public/boardMembers/Scott-Duckworth.png"
-import TempleSloan from "../public/boardMembers/Temple-Sloan.png"
+import placeholderAvatar from "../public/boardMembers/rpdfPlaceholder.png";
+import ScottDuckworth from "../public/boardMembers/Scott-Duckworth.png";
+import TempleSloan from "../public/boardMembers/Temple-Sloan.png";
+import videoPlaceholder from "../public/video-placeholder.png";
+import styles from "../styles/About.module.scss";
 
 
 
@@ -68,6 +69,7 @@ const donorQuotes = [
 
 
 const About = () => {
+  const [modalShow, setModalShow] = React.useState(false);
   return (
     <div>
       <Navbar />
@@ -75,7 +77,7 @@ const About = () => {
         <div className="container">
           <div className="row row-align-center">
             <div className="col-md-6">
-              <div className="shadow-lg">
+              <div className="shadow-lg" onClick={() => setModalShow(true)}>
                 <Image src={videoPlaceholder} alt="RPDF Logo" layout="responsive" />
               </div>
 
@@ -155,7 +157,7 @@ const About = () => {
           <div className="row row-align-center my-3 g-5">
             {donorQuotes.map((donor, index) => (
               <div className={`${index % 2 === 0 ? '' : 'ms-auto'} col-12 col-md-8`} key={index}>
-                <div className={`${index % 2 === 0 ? '' : 'text-end'} bg-white border border-light rounded-1 p-3  shadow-sm`}>
+                <div className={`${index % 2 === 0 ? '' : 'text-end'} bg-white border border-light rounded-1 p-3 shadow-sm`}>
                   <p>"{donor.quote}"</p>
                   <div className={`${index % 2 === 0 ? '' : 'justify-content-end'} d-flex align-items-center`}>
                     <div className={`${index % 2 === 0 ? 'pe-3' : 'order-2 justify-content-end ps-3'} ${styles.donorQuoteAvatar}`}>
@@ -176,6 +178,11 @@ const About = () => {
 
       <ContactForm />
       <Footer />
+      <VideoModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+        videoUrl={'https://www.youtube.com/watch?v=ioCaQwLb_2k'}
+      />
     </div>
   );
 }
