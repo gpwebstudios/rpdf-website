@@ -1,12 +1,14 @@
 import Image from "next/image";
-import Link from 'next/link'
+import Link from 'next/link';
+import React from "react";
+import Button from 'react-bootstrap/Button';
+import { BsFillPlayFill } from 'react-icons/bs';
+import tl2 from "../../public/tl-2.png";
+import tl3 from "../../public/tl-3.png";
+import tl4 from "../../public/tl-4.png";
+import tl1 from "../../public/video-placeholder.png";
+import VideoModal from "../layout/VideoModal";
 import styles from "./info-timeline.module.scss";
-import tl1 from "../../public/video-placeholder.png"
-import tl2 from "../../public/tl-2.png"
-import tl3 from "../../public/tl-3.png"
-import tl4 from "../../public/tl-4.png"
-import { BsFillPlayFill } from 'react-icons/bs'
-
 
 
 const pageData = [
@@ -38,6 +40,7 @@ const pageData = [
 ]
 
 const InfoTimeline = () => {
+  const [modalShow, setModalShow] = React.useState(false);
   return (
     <>
       <div className={`${styles.infoTimeline} container-fluid`}>
@@ -47,7 +50,7 @@ const InfoTimeline = () => {
           {pageData.map((data, index) => (
             <div className="row text-center align-items-center" key={index}>
               <div className="col-md-6">
-                <div className={`${styles.imageWrapper} p-5 m-auto `}>
+                <div className={`${styles.imageWrapper} p-5 m-auto `} onClick={() => data.buttonText === 'Play Video' && setModalShow(true)}>
                   <Image src={data.imageSrc} alt="RPDF Logo" layout="responsive" />
                 </div>
               </div>
@@ -55,17 +58,30 @@ const InfoTimeline = () => {
                 <div className={`${styles.sectionDescription} fs-4 pb-5 m-auto`}>
                   {data.description}
                 </div>
-                <Link href={data.btnHref}>
-                  <button className="btn btn-primary px-5">
-                    <div className="d-flex align-items-center"> {data.buttonText === 'Play Video' && <><BsFillPlayFill /> &nbsp;</>}
-                      {data.buttonText}</div>
-                  </button>
-                </Link>
+                {data.buttonText === 'Play Video'
+                  ?
+                  <Button className="px-5" variant="primary" onClick={() => setModalShow(true)}>
+                    <div className="d-flex align-items-center">
+                      <BsFillPlayFill /> &nbsp; {data.buttonText}</div>
+                  </Button>
+
+                  : <Link href={data.btnHref}>
+                    <button className="btn btn-primary px-5">
+                      <div className="d-flex align-items-center">
+                        {data.buttonText}</div>
+                    </button>
+                  </Link>
+                }
               </div>
             </div>
           ))}
         </div>
       </div>
+      <VideoModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+        videoUrl={'https://www.youtube.com/watch?v=ioCaQwLb_2k'}
+      />
     </>);
 }
 export default InfoTimeline

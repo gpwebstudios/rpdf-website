@@ -13,6 +13,8 @@ const SLIDE_COUNT = 3;
 const slides = Array.from(Array(SLIDE_COUNT).keys());
 
 const Home: NextPage = () => {
+
+
   return (
     <div className={styles.container}>
       <Head>

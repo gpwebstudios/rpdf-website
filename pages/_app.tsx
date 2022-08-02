@@ -8,8 +8,8 @@ import "@fontsource/source-sans-pro/700.css";
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     typeof document !== undefined ? require('bootstrap/dist/js/bootstrap') : null
-}, [])
-  
+  }, [])
+
   return <Component {...pageProps} />
 }
 
