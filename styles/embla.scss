@@ -41,7 +41,7 @@
   position: relative;
   overflow: hidden;
   height: 50vh;
-  background-image: linear-gradient(to left, rgba(245, 246, 252, 0.25), rgba(35, 87, 142, 0.9));
+  background-image: linear-gradient(to left, rgba(245, 246, 252, 0.3), rgba(35, 87, 142, 1));
 
 
   span {
@@ -54,6 +54,11 @@
   .embla__slide__inner {
     height: 40vh;
   }
+
+  .slide-content-max-w {
+    max-width: 50%;
+  }
+
 }
 
 .embla__slide__img {
@@ -106,7 +111,8 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  .btn{
+
+  .btn {
     width: 175px;
 
   }
