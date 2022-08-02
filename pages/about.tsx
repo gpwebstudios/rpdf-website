@@ -3,33 +3,68 @@ import ContactForm from "../components/ContactForm";
 import Footer from "../components/layout/Footer";
 import Navbar from "../components/layout/Navbar";
 import videoPlaceholder from "../public/video-placeholder.png";
-
 import aboutUs from "../public/aboutUs.png"
-import placeholderAvatar from "../public/boardMembers/avatarPlaceholder.png"
-
+import placeholderAvatar from "../public/boardMembers/rpdfPlaceholder.png"
 import styles from "../styles/About.module.scss"
+
+import BrendaGibson from "../public/boardMembers/Brenda-Gibson.png";
+import ChandlerSpaulding from "../public/boardMembers/Chandler-Spaulding.png"
+import ChristineCraig from "../public/boardMembers/Christine-Craig.png";
+import CurryHuskes from "../public/boardMembers/Curry-Huskes.png";
+import GaffneyGunter from "../public/boardMembers/Gaffney-Gunter.png";
+import JudyZelnak from "../public/boardMembers/Judy-Zelnak.png";
+import KristyeBrackett from "../public/boardMembers/Kristye-Brackett.png";
+import LarryBarbour from "../public/boardMembers/Larry-Barbour.png";
+import LaurieGeer from "../public/boardMembers/Laurie-Geer.png";
+import MauriceSmith from "../public/boardMembers/Maurice-Smith.png";
+import ScottDuckworth from "../public/boardMembers/Scott-Duckworth.png"
+import TempleSloan from "../public/boardMembers/Temple-Sloan.png"
+
+
+
 
 
 const bodOfficers = [
-  { name: "Brenda Gibson", position: 'Chair', background: 'Community Leader', imgSrc: placeholderAvatar },
-  { name: "Christine Craig", position: 'Vice Chair', background: 'Vice President, Government Relations, WakeMed Health & Hospital', imgSrc: placeholderAvatar },
-  { name: "Kristye Brackett", position: 'Secretary', background: 'Senior Counsel, CapDev', imgSrc: placeholderAvatar },
-  { name: "Maurice Smith", position: 'Treasurer', background: 'CEO, Local Government Federal Credit Union', imgSrc: placeholderAvatar },
-  { name: "Temple Sloan, IV", position: 'Chair, Executive Committee', background: 'Trail Creek Investments', imgSrc: placeholderAvatar },
+  { name: "Brenda Gibson", position: 'Chair', background: 'Community Leader', imgSrc: BrendaGibson },
+  { name: "Christine Craig", position: 'Vice Chair', background: 'Vice President, Government Relations, WakeMed Health & Hospital', imgSrc: ChristineCraig },
+  { name: "Kristye Brackett", position: 'Secretary', background: 'Senior Counsel, CapDev', imgSrc: KristyeBrackett },
+  { name: "Maurice Smith", position: 'Treasurer', background: 'CEO, Local Government Federal Credit Union', imgSrc: MauriceSmith },
+  { name: "Temple Sloan, IV", position: 'Chair, Executive Committee', background: 'Trail Creek Investments', imgSrc: TempleSloan },
 ];
 
 const bodMembers = [
-  { name: "Larry Barbour", background: 'President & CEO, North State Bank', imgSrc: placeholderAvatar },
-  { name: "Scott Duckworth", background: 'Regional President, Brasfield & Gorrie', imgSrc: placeholderAvatar },
+  { name: "Larry Barbour", background: 'President & CEO, North State Bank', imgSrc: LarryBarbour },
+  { name: "Scott Duckworth", background: 'Regional President, Brasfield & Gorrie', imgSrc: ScottDuckworth },
   { name: "Dr. Tim Garner", background: 'Raleigh Neurosurgical Clinic', imgSrc: placeholderAvatar },
-  { name: "Laurie Geer", background: 'Community Leader', imgSrc: placeholderAvatar },
-  { name: "Gaffney Gunter", background: 'Owner/Operator, Gunter Enterprises Inc.', imgSrc: placeholderAvatar },
-  { name: "Curry Huskes", background: 'Area Sales Manager, CPI Security', imgSrc: placeholderAvatar },
+  { name: "Laurie Geer", background: 'Community Leader', imgSrc: LaurieGeer },
+  { name: "Gaffney Gunter", background: 'Owner/Operator, Gunter Enterprises Inc.', imgSrc: GaffneyGunter },
+  { name: "Curry Huskes", background: 'Area Sales Manager, CPI Security', imgSrc: CurryHuskes },
   { name: "Bryan Pfohl", background: 'Chairman & CEO, Sunrock Group Holdings', imgSrc: placeholderAvatar },
-  { name: "Chandler Spaulding", background: 'Director, Communications & Government Relations, Smith Anderson Law Firm', imgSrc: placeholderAvatar },
-  { name: "Judy Zelnak", background: 'Community Leader', imgSrc: placeholderAvatar },
+  { name: "Chandler Spaulding", background: 'Director, Communications & Government Relations, Smith Anderson Law Firm', imgSrc: ChandlerSpaulding },
+  { name: "Judy Zelnak", background: 'Community Leader', imgSrc: JudyZelnak },
   { name: "Silvia West", background: 'North Carolina Museum of History', imgSrc: placeholderAvatar },
 ];
+
+const donorQuotes = [
+  {
+    name: "Gaffney Gunter",
+    background: "Community Leader and Raleigh Police Department Foundation Donor",
+    quote: "There are so many incredible officers on the Raleigh Police force – and their efforts have a tremendous impact on our community. When funding falls short, I’m proud to donate to support the many outreach programs and initiatives that I know will help keep our community safe.",
+    avatarSrc: GaffneyGunter
+  },
+  {
+    name: "RPDF Donor",
+    background: "Raleigh Police Department Foundation Donor",
+    quote: "There are so many incredible officers on the Raleigh Police force – and their efforts have a tremendous impact on our community. When funding falls short, I’m proud to donate to support the many outreach programs and initiatives that I know will help keep our community safe.",
+    avatarSrc: placeholderAvatar
+  },
+  {
+    name: "RPDF Donor",
+    background: "Raleigh Police Department Foundation Donor",
+    quote: "There are so many incredible officers on the Raleigh Police force – and their efforts have a tremendous impact on our community. When funding falls short, I’m proud to donate to support the many outreach programs and initiatives that I know will help keep our community safe.",
+    avatarSrc: placeholderAvatar
+  }
+]
 
 
 const About = () => {
@@ -89,7 +124,7 @@ const About = () => {
           <div className="row row-align-center justify-content-center mt-5 px-2 g-4">
             {bodOfficers.map((data, index) => (
               <div className="col-12 col-sm-6 col-md-4" key={index}>
-                <div className={styles.bodImageWrapper}>
+                <div className={`${styles.bodImageWrapper} border border-light border-2 rounded-1`}>
                   <Image src={data.imgSrc} alt="RPDF Logo" layout="responsive" />
                 </div>
                 <div className="text-uppercase pt-3">{data.position}</div>
@@ -105,13 +140,36 @@ const About = () => {
         <div className="row row-align-center justify-content-center mt-5 px-2 g-4">
           {bodMembers.map((data, index) => (
             <div className="col-12 col-sm-6 col-md-3" key={index}>
-              <div className={styles.bodImageWrapper}>
-                <Image src={data.imgSrc} alt="RPDF Logo" layout="responsive" />
+              <div className={`${styles.bodImageWrapper}`}>
+                <Image src={data.imgSrc} alt="RPDF Logo" layout="responsive" className="rounded-1" />
               </div>
               <div className="fs-4 fw-bold py-1">{data.name}</div>
               <div className={`${styles.textLightGray} pb-5`}>{data.background}</div>
             </div>
           ))}
+        </div>
+      </div>
+      <div className="container-fluid bg-light border-top pb-5">
+        <h2 className="text-center mt-5">Hear from Our Donors</h2>
+        <div className={`container`}>
+          <div className="row row-align-center my-3 g-5">
+            {donorQuotes.map((donor, index) => (
+              <div className={`${index % 2 === 0 ? '' : 'ms-auto'} col-12 col-md-8`} key={index}>
+                <div className={`${index % 2 === 0 ? '' : 'text-end'} bg-white border border-light rounded-1 p-3  shadow-sm`}>
+                  <p>"{donor.quote}"</p>
+                  <div className={`${index % 2 === 0 ? '' : 'justify-content-end'} d-flex align-items-center`}>
+                    <div className={`${index % 2 === 0 ? 'pe-3' : 'order-2 justify-content-end ps-3'} ${styles.donorQuoteAvatar}`}>
+                      <Image src={donor.avatarSrc} alt="RPDF Logo" width={100} height={100} className={` rounded-circle`} />
+                    </div>
+                    <div className={index % 2 === 0 ? '' : 'text-end'}>
+                      — {donor.name}<br /> <i className={styles.textLightGray}>{donor.background}</i>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 

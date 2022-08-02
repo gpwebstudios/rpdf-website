@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from 'next/link'
 import styles from "./info-timeline.module.scss";
 import tl1 from "../../public/video-placeholder.png"
 import tl2 from "../../public/tl-2.png"
@@ -13,21 +14,26 @@ const pageData = [
     imageSrc: tl1,
     description: "The RPDF is an independent, non-profit organization dedicated to assuring safer neighborhoods and highly-skilled and equipped police through better technology, education and programming.",
     buttonText: "Play Video",
+    btnHref: '/'
   },
   {
     imageSrc: tl2,
     description: "The RPDF funds critical equipment and initiatives designed to support a thriving community.",
     buttonText: "Our Work",
+    btnHref: '/Our-Work'
+
   },
   {
     imageSrc: tl3,
     description: "The RPDF aims to protect our community by strengthening the Raleigh Police Department services and promoting public safety.",
     buttonText: "About Us",
+    btnHref: '/about'
   },
   {
     imageSrc: tl4,
     description: "Take a look behind the badge and meet the inspiring officers who work tirelessly to protect our community.",
     buttonText: "The Faces of The RPD",
+    btnHref: '/Meet-RPD'
   },
 ]
 
@@ -49,11 +55,12 @@ const InfoTimeline = () => {
                 <div className={`${styles.sectionDescription} fs-4 pb-5 m-auto`}>
                   {data.description}
                 </div>
-                <button className="btn btn-primary px-5">
-                  <div className="d-flex align-items-center"> {data.buttonText === 'Play Video' && <><BsFillPlayFill /> &nbsp;</>}
-                    {data.buttonText}</div>
-
-                </button>
+                <Link href={data.btnHref}>
+                  <button className="btn btn-primary px-5">
+                    <div className="d-flex align-items-center"> {data.buttonText === 'Play Video' && <><BsFillPlayFill /> &nbsp;</>}
+                      {data.buttonText}</div>
+                  </button>
+                </Link>
               </div>
             </div>
           ))}

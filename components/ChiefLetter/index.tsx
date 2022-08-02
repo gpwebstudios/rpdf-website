@@ -1,6 +1,6 @@
 import Image from "next/image";
 import chiefSignature from "../../public/chief-signature.svg";
-import chiefPortrait from "../../public/chief-portrait.png"
+import chiefPortrait from "../../public/chief.png"
 
 const ContactForm = () => {
   return (<>
@@ -19,7 +19,7 @@ const ContactForm = () => {
             </div>
           </div>
           <div className="image-container">
-            <Image src={chiefPortrait} alt="RPDF Logo" width={400} />
+            <Image src={chiefPortrait} alt="RPDF Logo" width={600}/>
           </div>
         </div>
       </div>
