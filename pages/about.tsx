@@ -181,7 +181,7 @@ const About = () => {
       <VideoModal
         show={modalShow}
         onHide={() => setModalShow(false)}
-        videoUrl={'https://www.youtube.com/watch?v=ioCaQwLb_2k'}
+        videoUrl={'https://www.youtube.com/watch?v=Sa-MaK58cG0'}
       />
     </div>
   );
