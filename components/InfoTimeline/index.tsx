@@ -6,7 +6,7 @@ import { BsFillPlayFill } from 'react-icons/bs';
 import tl2 from "../../public/tl-2.png";
 import tl3 from "../../public/tl-3.png";
 import tl4 from "../../public/tl-4.png";
-import tl1 from "../../public/video-placeholder.png";
+import tl1 from "../../public/chiefVideo.png";
 import VideoModal from "../layout/VideoModal";
 import styles from "./info-timeline.module.scss";
 
@@ -43,19 +43,21 @@ const InfoTimeline = () => {
   const [modalShow, setModalShow] = React.useState(false);
   return (
     <>
-      <div className={`${styles.infoTimeline} container-fluid`}>
+      <div className={`${styles.infoTimeline} container mt-5`}>
         <div className={styles.timelineDotsContainer}>
         </div>
         <div className={styles.tlLine}>
           {pageData.map((data, index) => (
             <div className="row text-center align-items-center" key={index}>
               <div className="col-md-6">
-                <div className={`${styles.imageWrapper} p-5 m-auto `} onClick={() => data.buttonText === 'Play Video' && setModalShow(true)}>
+                <div
+                  className={`${styles.imageWrapper} ${data.buttonText === 'Play Video' ? 'p-5' : 'p-5'} m-auto `}
+                  onClick={() => data.buttonText === 'Play Video' && setModalShow(true)}>
                   <Image src={data.imageSrc} alt="RPDF Logo" layout="responsive" />
                 </div>
               </div>
               <div className={`col-md-6 text-center ${index % 2 == 0 ? '' : styles.colOrderFirst}`}>
-                <div className={`${styles.sectionDescription} fs-4 pb-5 m-auto`}>
+                <div className={`${styles.sectionDescription} pb-4 m-auto`}>
                   {data.description}
                 </div>
                 {data.buttonText === 'Play Video'

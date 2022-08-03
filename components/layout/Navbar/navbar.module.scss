@@ -1,7 +1,16 @@
-.rpdfNav{
 
-}
+  .navLink {
+    color: #1A375B !important;
+    transition: none;
+    border-bottom: 2px solid transparent;
 
-.rpdf-active {
-  color: pink !important;
-}
+    &:hover,
+    a:hover {
+      border-color: #ced4da;
+    }
+  }
+
+  .active {
+    font-weight: 700;
+    border-color: #F8B513 !important;
+  }

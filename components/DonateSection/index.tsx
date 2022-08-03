@@ -1,7 +1,7 @@
 import Image from "next/image";
-import styles from "./donate-section.module.scss";
-import donateImage from "../../public/donateSection.png"
 import { BiDonateHeart } from "react-icons/bi";
+import donateImage from "../../public/donateSection.png";
+import styles from "./donate-section.module.scss";
 
 const DonateSection = () => {
   return (
@@ -19,7 +19,9 @@ const DonateSection = () => {
             <div className="pb-5 px-3 fs-5">
               Every dollar raised by the RPDF is used to support the Raleigh Police Department’s mission of preserving and improving the quality of life here in our community.
             </div>
-            <button className="btn btn-primary px-5">Donate Here</button>
+            <a target="_blank" href="https://www.paypal.com/donate/?hosted_button_id=W37M2CD6UA62Y" rel="noreferrer">
+              <button className="btn btn-primary px-5">Donate Here</button>
+            </a>
           </div>
         </div>
       </div>

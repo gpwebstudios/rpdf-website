@@ -41,17 +41,19 @@ a {
   .nav-link {
     color: #1A375B !important;
     transition: none;
+    border-bottom: 2px solid transparent;
 
     &:hover,
     a:hover {
-      border-bottom: 2px solid #ced4da;
+      border-color: #ced4da;
     }
   }
 
   .active {
     font-weight: 700;
-    border-bottom: 2px solid #F8B513 !important;
+    border-color: #F8B513 !important;
   }
+
 }
 
 

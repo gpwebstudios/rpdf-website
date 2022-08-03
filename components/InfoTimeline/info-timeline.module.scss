@@ -2,11 +2,12 @@
 
 
   .imageWrapper {
-    max-width: 575px;
+    max-width: 475px;
   }
 
   .sectionDescription {
-    max-width: 520px;
+    max-width: 305px;
+    font-size: 1.1rem;
     color: #4E5358;
   }
 
@@ -18,11 +19,23 @@
 
 }
 
+@media (min-width: 1225px) {
+  .imageWrapper {
+    max-width: 575px !important;
+  }
+
+  .sectionDescription {
+    max-width: 520px !important;
+    font-size: 1.3rem !important;
+    color: #4E5358;
+  }
+}
+
 @media (min-width: 780px) {
   .infoTimeline {
     background-image: url("/timeline-dots.svg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 25% 40%;
     background-size: 100% 80%;
   }
 
