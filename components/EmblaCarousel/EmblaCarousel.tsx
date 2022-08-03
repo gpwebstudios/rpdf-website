@@ -14,7 +14,7 @@ const carouselContent = [
     header: 'Every dollar raised by the RPDF supports the health and safety of our community', content: ''
   },
   {
-    header: 'With Support from Our Donors', content: 'There are so many incredible officers on the Raleigh Police force – and their efforts have a tremendous impact on our community. When funding falls short, I’m proud to donate to support the many outreach programs and initiatives that I know will help keep our community safe.'
+    header: 'Our mission is to advance public safety initiatives and promote police support for a safe and thriving community', content: ''
   },
 ]
 
@@ -78,16 +78,9 @@ const EmblaCarousel = ({ slides }: { slides: any }) => {
                   <div className={'slide-content container'}>
                     <h2 className="slide-content-max-w">{carouselContent[index].header}</h2>
                     <p className="mt-1 mb-4 slide-content-max-w">{carouselContent[index].content}</p>
-                    {index == 2 ? (
-                      <figcaption className="blockquote-footer text-light mt-1">
-                        Gaffney Gunter, <cite title="Source Title">Community Leader and Raleigh Police Department Foundation Donor</cite>
-                      </figcaption>
-                    ) : (
-                      <button className="btn btn-outline-light">
-                        Learn More
-                      </button>
-                    )}
-
+                    <button className="btn btn-outline-light">
+                      Learn More
+                    </button>
                   </div>
                 </div>
               </div>

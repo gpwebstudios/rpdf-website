@@ -27,10 +27,10 @@ import styles from "../styles/About.module.scss";
 
 const bodOfficers = [
   { name: "Brenda Gibson", position: 'Chair', background: 'Community Leader', imgSrc: BrendaGibson },
-  { name: "Christine Craig", position: 'Vice Chair', background: 'Vice President, Government Relations, WakeMed Health & Hospital', imgSrc: ChristineCraig },
+  { name: "Christine Craig", position: 'Vice Chair', background: 'Vice President, Government Relations', background2: 'WakeMed Health & Hospitals', imgSrc: ChristineCraig },
   { name: "Kristye Brackett", position: 'Secretary', background: 'Senior Counsel, CapDev', imgSrc: KristyeBrackett },
   { name: "Maurice Smith", position: 'Treasurer', background: 'CEO, Local Government Federal Credit Union', imgSrc: MauriceSmith },
-  { name: "Temple Sloan, IV", position: 'Chair, Executive Committee', background: 'Trail Creek Investments', imgSrc: TempleSloan },
+  { name: "Judy Zelnak", position: 'Executive Committee, Member-at-Large', background: 'Community Leader', imgSrc: JudyZelnak },
 ];
 
 const bodMembers = [
@@ -41,8 +41,8 @@ const bodMembers = [
   { name: "Gaffney Gunter", background: 'Owner/Operator, Gunter Enterprises Inc.', imgSrc: GaffneyGunter },
   { name: "Curry Huskes", background: 'Area Sales Manager, CPI Security', imgSrc: CurryHuskes },
   { name: "Bryan Pfohl", background: 'Chairman & CEO, Sunrock Group Holdings', imgSrc: placeholderAvatar },
+  { name: "Temple Sloan, IV", background: 'Trail Creek Investments', imgSrc: TempleSloan },
   { name: "Chandler Spaulding", background: 'Director, Communications & Government Relations, Smith Anderson Law Firm', imgSrc: ChandlerSpaulding },
-  { name: "Judy Zelnak", background: 'Community Leader', imgSrc: JudyZelnak },
   { name: "Silvia West", background: 'North Carolina Museum of History', imgSrc: placeholderAvatar },
 ];
 
@@ -131,7 +131,7 @@ const About = () => {
                 </div>
                 <div className="text-uppercase pt-3">{data.position}</div>
                 <div className="fs-3 fw-bold py-1">{data.name}</div>
-                <div className={`${styles.textGray1} pb-5`}>{data.background}</div>
+                <div className={`${styles.textGray1} pb-5`}>{data.background}{data.background2 && (<><br /> {data.background2}</>)}</div>
               </div>
             ))}
           </div>

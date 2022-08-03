@@ -36,7 +36,7 @@ const Navbar = () => {
               </li>
             ))}
             <li className="nav-item ms-2">
-              <a target="_blank" href="https://www.paypal.com/donate/?hosted_button_id=W37M2CD6UA62Y">
+              <a target="_blank" href="https://www.paypal.com/donate/?hosted_button_id=W37M2CD6UA62Y" rel="noreferrer">
                 <button className="btn btn-outline-primary" type="submit">Donate</button>
               </a>
             </li>
