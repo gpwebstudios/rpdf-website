@@ -58,7 +58,7 @@ const OurWork = () => {
             </div>
 
             <div className={`${styles.card} mx-auto text-center pt-2`}>
-              <h2>Community Support</h2>
+              <h2>Community Impact</h2>
               <Image src={c4} alt="Community Support" className="rounded-2" width={450} height={300} layout="responsive" />
               <p className={styles.text}>Strengthening our community through youth and outreach programs, internships and scholarships to support tomorrow’s police force.</p>
             </div>

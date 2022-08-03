@@ -43,7 +43,7 @@ const bodMembers = [
   { name: "Bryan Pfohl", background: 'Chairman & CEO, Sunrock Group Holdings', imgSrc: placeholderAvatar },
   { name: "Temple Sloan, IV", background: 'Trail Creek Investments', imgSrc: TempleSloan },
   { name: "Chandler Spaulding", background: 'Director, Communications & Government Relations, Smith Anderson Law Firm', imgSrc: ChandlerSpaulding },
-  { name: "Silvia West", background: 'North Carolina Museum of History', imgSrc: placeholderAvatar },
+  { name: "Sylvia West", background: 'North Carolina Museum of History', imgSrc: placeholderAvatar },
 ];
 
 const donorQuotes = [
