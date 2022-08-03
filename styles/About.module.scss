@@ -45,9 +45,18 @@
 
 
 }
+
 .bodImageWrapper {
   max-width: 300px;
   margin: auto;
+}
+
+@media (min-width: 780px) and (max-width: 993px) {
+  .videoDescription {
+    h1 {
+      font-size: 1.5rem !important;
+    }
+  }
 }
 
 @media (min-width: 780px) {

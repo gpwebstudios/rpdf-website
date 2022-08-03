@@ -36,7 +36,9 @@ const Navbar = () => {
               </li>
             ))}
             <li className="nav-item ms-2">
-              <button className="btn btn-outline-primary" type="submit">Donate</button>
+              <a target="_blank" href="https://www.paypal.com/donate/?hosted_button_id=W37M2CD6UA62Y">
+                <button className="btn btn-outline-primary" type="submit">Donate</button>
+              </a>
             </li>
           </ul>
         </div>

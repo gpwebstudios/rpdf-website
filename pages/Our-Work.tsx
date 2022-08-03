@@ -30,13 +30,13 @@ const OurWork = () => {
           <div className={styles.grid}>
             <div className={`${styles.card} mx-auto text-center pt-2`}>
               <h2>Innovation & Equipment</h2>
-              <Image src={c1} alt="Innovation & Equipment" className={'text-center'} width={450} height={300} layout="responsive" />
+              <Image src={c1} alt="Innovation & Equipment" className={'text-center rounded-2'} width={450} height={300} layout="responsive" />
               <p className={styles.text}>By providing better technology, education and programming, the RPDF is dedicated to assuring safer neighborhoods and a highly-skilled and equipped police force.</p>
             </div>
 
             <div className={`${styles.card} mx-auto text-center pt-2`}>
               <h2>Advanced Training & Leadership</h2>
-              <Image src={c2} alt="Advanced Training & Leadership" width={450} height={300} layout="responsive" />
+              <Image src={c2} alt="Advanced Training & Leadership" className="rounded-2" width={450} height={300} layout="responsive" />
               <p className={styles.text}>Funding specialty skills training and leadership development opportunities that strengthen the RPD and its ability to keep our communities safe.</p>
             </div>
           </div>
@@ -53,13 +53,13 @@ const OurWork = () => {
           <div className={styles.grid}>
             <div className={`${styles.card} mx-auto text-center pt-2`}>
               <h2>Supporting Our Officers</h2>
-              <Image src={c3} alt="Supporting Our Officers" width={450} height={300} layout="responsive" />
+              <Image src={c3} alt="Supporting Our Officers" className="rounded-2" width={450} height={300} layout="responsive" />
               <p className={styles.text}>Honoring fallen heroes, and/or aiding police officers and their families who are seriously injured in the line of duty.</p>
             </div>
 
             <div className={`${styles.card} mx-auto text-center pt-2`}>
               <h2>Community Support</h2>
-              <Image src={c4} alt="Community Support" width={450} height={300} layout="responsive" />
+              <Image src={c4} alt="Community Support" className="rounded-2" width={450} height={300} layout="responsive" />
               <p className={styles.text}>Strengthening our community through youth and outreach programs, internships and scholarships to support tomorrow’s police force.</p>
             </div>
           </div>

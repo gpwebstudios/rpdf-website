@@ -11,7 +11,7 @@ const carouselContent = [
     header: 'Supporting Our Heroes', content: 'We are proud to support the Raleigh Police Department'
   },
   {
-    header: 'Supporting Our Police', content: 'We are proud to support the Raleigh Police Department'
+    header: 'Every dollar raised by the RPDF supports the health and safety of our community', content: ''
   },
   {
     header: 'With Support from Our Donors', content: 'There are so many incredible officers on the Raleigh Police force – and their efforts have a tremendous impact on our community. When funding falls short, I’m proud to donate to support the many outreach programs and initiatives that I know will help keep our community safe.'
@@ -76,7 +76,7 @@ const EmblaCarousel = ({ slides }: { slides: any }) => {
                   />
 
                   <div className={'slide-content container'}>
-                    <h2>{carouselContent[index].header}</h2>
+                    <h2 className="slide-content-max-w">{carouselContent[index].header}</h2>
                     <p className="mt-1 mb-4 slide-content-max-w">{carouselContent[index].content}</p>
                     {index == 2 ? (
                       <figcaption className="blockquote-footer text-light mt-1">

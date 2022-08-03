@@ -18,7 +18,7 @@ import MauriceSmith from "../public/boardMembers/Maurice-Smith.png";
 import placeholderAvatar from "../public/boardMembers/rpdfPlaceholder.png";
 import ScottDuckworth from "../public/boardMembers/Scott-Duckworth.png";
 import TempleSloan from "../public/boardMembers/Temple-Sloan.png";
-import videoPlaceholder from "../public/video-placeholder.png";
+import chiefVideo from "../public/chiefVideo.png";
 import styles from "../styles/About.module.scss";
 
 
@@ -78,7 +78,7 @@ const About = () => {
           <div className="row row-align-center">
             <div className="col-md-6">
               <div className="shadow-lg" onClick={() => setModalShow(true)}>
-                <Image src={videoPlaceholder} alt="RPDF Logo" layout="responsive" />
+                <Image src={chiefVideo} alt="RPDF Logo" layout="responsive" />
               </div>
 
             </div>
@@ -96,7 +96,7 @@ const About = () => {
         <div className="row row-align-center">
           <div className="col-md-6">
             <div className={styles.imageWrapper}>
-              <Image src={aboutUs} alt="RPDF Logo" layout="responsive" />
+              <Image src={aboutUs} alt="RPDF Logo" layout="responsive" priority={true} />
             </div>
           </div>
           <div className={`${styles.aboutDescription} col-md-6`}>
