@@ -72,7 +72,7 @@ const EmblaCarousel = ({ slides }: { slides: any }) => {
                     src={mediaByIndex(index).src}
                     alt="RPDF Help"
                     layout='fill'
-                    priority={index === 0}
+                    priority={true}
                   />
 
                   <div className={'slide-content container'}>

@@ -53,7 +53,7 @@ const InfoTimeline = () => {
                 <div
                   className={`${styles.imageWrapper} ${data.buttonText === 'Play Video' ? 'p-5' : 'p-5'} m-auto `}
                   onClick={() => data.buttonText === 'Play Video' && setModalShow(true)}>
-                  <Image src={data.imageSrc} alt="RPDF Logo" layout="responsive" />
+                  <Image src={data.imageSrc} alt="RPDF Logo" layout="responsive"  priority={index === 0}/>
                 </div>
               </div>
               <div className={`col-md-6 text-center ${index % 2 == 0 ? '' : styles.colOrderFirst}`}>
