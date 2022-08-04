@@ -136,7 +136,7 @@ const ContactForm = () => {
             </div>
             <div className={`${state.succeeded ? 'justify-content-between' : 'justify-content-end'} d-flex  align-items-center pt-3`} >
               {state.succeeded &&
-                <div className="alert alert-success d-flex align-items-center my-2" role="alert">
+                <div className="alert alert-success d-flex align-items-center my-2 me-2" role="alert">
                   <div className='d-flex align-items-center'>
                     <FaCheck />
                   </div>
