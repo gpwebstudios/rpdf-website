@@ -151,7 +151,7 @@ const About = () => {
           ))}
         </div>
       </div>
-      <div className="container-fluid bg-light border-top pb-5">
+      {/* <div className="container-fluid bg-light border-top pb-5">
         <h2 className="text-center mt-5">Hear from Our Donors</h2>
         <div className={`container`}>
           <div className="row row-align-center my-3 g-5">
@@ -173,7 +173,7 @@ const About = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
 
       <ContactForm />

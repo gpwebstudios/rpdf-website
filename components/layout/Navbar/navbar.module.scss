@@ -14,3 +14,10 @@
     font-weight: 700;
     border-color: #F8B513 !important;
   }
+
+
+  @media (max-width: 450px) {
+    .logoLink {
+      max-width: 300px !important;
+    }
+  }

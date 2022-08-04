@@ -42,6 +42,7 @@ a {
     color: #1A375B !important;
     transition: none;
     border-bottom: 2px solid transparent;
+    max-width: 111px;
 
     &:hover,
     a:hover {
@@ -207,6 +208,7 @@ a {
       max-width: 400px;
     }
   }
+
 
   @media (min-width: 770px) {
     .image-container {

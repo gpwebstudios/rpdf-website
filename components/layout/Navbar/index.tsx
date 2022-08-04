@@ -19,7 +19,7 @@ const Navbar = () => {
     <nav className={`navbar navbar-expand-lg ${styles.rpdfNav}`}>
       <div className="container">
         <Link href="/">
-          <a className="navbar-brand" href="#">
+          <a className={`navbar-brand ${styles.logoLink}`} href="#">
             <Image src={logo} alt="Wake Relief Logo" width={340} />
           </a>
         </Link>
@@ -29,13 +29,13 @@ const Navbar = () => {
         <div className="collapse navbar-collapse justify-content-end" id="rpdfNavbar">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             {navData.map((data, index) => (
-              <li className="nav-item" key={index}>
+              <li className={`nav-item ${index == 3 ? 'pe-2' : ''}`} key={index}>
                 <Link href={data.href}>
                   <a className={`${router.pathname === data.href ? "active" : ""} nav-link`}>{data.linkText}</a>
                 </Link>
               </li>
             ))}
-            <li className="nav-item ms-2">
+            <li className="nav-item">
               <a target="_blank" href="https://www.paypal.com/donate/?hosted_button_id=W37M2CD6UA62Y" rel="noreferrer">
                 <button className="btn btn-outline-primary" type="submit">Donate</button>
               </a>
