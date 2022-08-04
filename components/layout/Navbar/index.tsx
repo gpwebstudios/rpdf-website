@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className="container">
         <Link href="/">
           <a className={`navbar-brand ${styles.logoLink}`} href="#">
-            <Image src={logo} alt="Wake Relief Logo" width={340} />
+            <Image src={logo} alt="RPDF Logo" width={340} />
           </a>
         </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rpdfNavbar" aria-controls="rpdfNavbar" aria-expanded="false" aria-label="Toggle navigation">
