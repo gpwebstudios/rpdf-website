@@ -70,7 +70,7 @@ const EmblaCarousel = ({ slides }: { slides: any }) => {
                   <Image
                     className="embla__slide__img"
                     src={mediaByIndex(index).src}
-                    alt="Wake Relief Help"
+                    alt="RPDF Help"
                     layout='fill'
                     priority={index === 0}
                   />

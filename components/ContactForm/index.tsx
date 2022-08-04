@@ -1,7 +1,10 @@
-import React, { useState } from "react"
-import { FaFacebook, FaInstagram, FaRegEnvelope } from "react-icons/fa";
+import { useForm, ValidationError } from '@formspree/react';
+import { useState } from "react";
+import { FaFacebook, FaInstagram, FaRegEnvelope, FaCheck } from "react-icons/fa";
 
 const ContactForm = () => {
+  const [state, handleSubmit] = useForm("maykwabk");
+
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [county, setCounty] = useState('');
@@ -9,27 +12,26 @@ const ContactForm = () => {
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [message, setMessage] = useState('');
-
-  const handleSubmit = (e: { preventDefault: () => void; }) => {
-    e.preventDefault();
-    const data = {
-      firstName,
-      lastName,
-      county,
-      city,
-      email,
-      phoneNumber,
-      message
-    };
-    fetch('/api/contact', {
-      method: 'post',
-      body: JSON.stringify(data),
-    });
-  }
+  // const handleSubmit = (e: { preventDefault: () => void; }) => {
+  //   e.preventDefault();
+  //   const data = {
+  //     firstName,
+  //     lastName,
+  //     county,
+  //     city,
+  //     email,
+  //     phoneNumber,
+  //     message
+  //   };
+  //   fetch('/api/contact', {
+  //     method: 'post',
+  //     body: JSON.stringify(data),
+  //   });
+  // }
 
 
   return (
-    <div id="contactForm" className="container my-5 pt-5">
+    <div id="contactForm" className="container my-5">
       <div className="row border rounded shadow-sm">
         <div className="col-md-4 p-4 contact-info">
           <div className="fw-bold mb-3 text-light-gray">Contact Us</div>
@@ -55,9 +57,10 @@ const ContactForm = () => {
                 <input
                   id="contactFirstName"
                   type="text"
+                  name="First Name"
                   className="form-control"
                   placeholder="First name"
-                  onChange={e => setFirstName(e.target.value)}
+                  required={true}
                 />
               </div>
               <div className="col-md-6">
@@ -65,9 +68,10 @@ const ContactForm = () => {
                 <input
                   id="contactLastName"
                   type="text"
+                  name="Last Name"
                   className="form-control"
                   placeholder="Last name"
-                  onChange={e => setLastName(e.target.value)}
+                  required={true}
                 />
               </div>
             </div>
@@ -77,9 +81,9 @@ const ContactForm = () => {
                 <input
                   id="contactCounty"
                   type="text"
+                  name="County"
                   className="form-control"
                   placeholder="County"
-                  onChange={e => setCounty(e.target.value)}
                 />
               </div>
               <div className="col-md-6">
@@ -87,9 +91,9 @@ const ContactForm = () => {
                 <input
                   id="contactCity"
                   type="text"
+                  name="City"
                   className="form-control"
                   placeholder="City"
-                  onChange={e => setCity(e.target.value)}
                 />
               </div>
             </div>
@@ -99,19 +103,25 @@ const ContactForm = () => {
                 <input
                   id="contactPhone"
                   type="text"
+                  name="Phone Number"
                   className="form-control"
                   placeholder="Phone"
-                  onChange={e => setPhoneNumber(e.target.value)}
                 />
               </div>
               <div className="col-md-6">
-                <label htmlFor="contactEmail">Email Address</label>
+                <label htmlFor="email">Email Address</label>
                 <input
-                  id="contactEmail"
-                  type="text"
+                  id="email"
+                  type="email"
+                  name="Email"
                   className="form-control"
                   placeholder="Email"
-                  onChange={e => setEmail(e.target.value)}
+                  required={true}
+                />
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
                 />
               </div>
             </div>
@@ -120,15 +130,29 @@ const ContactForm = () => {
               <textarea
                 className="form-control"
                 id="contactMessage"
+                name="Message"
                 rows={3}
-                onChange={e => setMessage(e.target.value)}
               ></textarea>
             </div>
-            <div className="text-end pt-3">
-              <button className="btn btn-primary" type="submit">
-                Submit
-              </button>
+            <div className={`${state.succeeded ? 'justify-content-between' : 'justify-content-end'} d-flex  align-items-center pt-3`} >
+              {state.succeeded &&
+                <div className="alert alert-success d-flex align-items-center my-2" role="alert">
+                  <div className='d-flex align-items-center'>
+                    <FaCheck />
+                  </div>
+                  <div className='px-3'>
+                    Thank you for your message! We'll get back to you shortly.
+                  </div>
+                </div>
+              }
+
+              <div>
+                <button className="btn btn-primary" type="submit" disabled={state.submitting}>
+                  Submit
+                </button>
+              </div>
             </div>
+
           </form>
         </div>
       </div>
