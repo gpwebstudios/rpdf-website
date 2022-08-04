@@ -7,10 +7,10 @@ import HeroImage from "../components/layout/HeroImage";
 import Navbar from "../components/layout/Navbar";
 import VideoModal from "../components/layout/VideoModal";
 import heroImg from "../media/rpdf-hero-3.png";
-import BrownVideo from "../public/videoStill-Brown.png";
-import KidderVideo from "../public/videoStill-Kidder.png";
-import RodriguesVideo from "../public/videoStill-Rodrigues.png";
-import ThompsonVideo from "../public/videoStill-Thompson.png";
+import BrownVideo from "../public/video-Brown.png";
+import KidderVideo from "../public/video-Kidder.png";
+import RodriguesVideo from "../public/video-Rodrigues.png";
+import ThompsonVideo from "../public/video-Thompson.png";
 import styles from '../styles/MeetRPD.module.scss';
 
 const officerData = [
