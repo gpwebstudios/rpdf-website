@@ -41,11 +41,18 @@ const MeetRPD = () => {
         <div className="container text-center">
           <div className="row row-align-center justify-content-center mt-5 px-2 g-4">
             <div className="col-12 col-md-6 pb-3">
-              <div className={`${styles.imageContainer} shadow`} onClick={() => setModal1Show(true)}>
-                <Image src={ThompsonVideo} alt="" layout="responsive" objectFit="contain" />
+              <div className={`${styles.imageContainer} shadow`} onClick={() => setModal4Show(true)}>
+                <Image src={BrownVideo} alt="" layout="responsive" objectFit="contain" />
               </div>
-              <div className="fs-4 fw-bold py-1">JM Thompson</div>
-              <div className={`${styles.officerQuote} pb-5 fst-italic`}>"To be a public servant means to see something that needs to be done and to do it. If I see someone in need, or a victim who needs help, I’m the person who goes in and takes care of that."</div>
+              <div className="fs-4 fw-bold py-1">Darell Brown</div>
+              <div className={`${styles.officerQuote} pb-5 fst-italic`}>"To serve means something extremely important to me. It really means something when you can solve a problem in a community that can help them sleep better at night"</div>
+            </div>
+            <div className="col-12 col-md-6 pb-3">
+              <div className={`${styles.imageContainer} shadow`} onClick={() => setModal3Show(true)}>
+                <Image src={KidderVideo} alt="" layout="responsive" objectFit="contain" />
+              </div>
+              <div className="fs-4 fw-bold py-1">Chelsea Kidder</div>
+              <div className={`${styles.officerQuote} pb-5 fst-italic`}>"The community side of policing is what I’m really passionate about. Being out in the community changes your perspective and lets you really help each day."</div>
             </div>
             <div className="col-12 col-md-6 pb-3">
               <div className={`${styles.imageContainer} shadow`} onClick={() => setModal2Show(true)}>
@@ -54,21 +61,12 @@ const MeetRPD = () => {
               <div className="fs-4 fw-bold py-1">MT Rodrigues</div>
               <div className={`${styles.officerQuote} pb-5 fst-italic`}>"Typically, when someone calls 911, it could be the worst day of their life. As police officers, when we respond to a call, our goal is to leave that person in a better state than when they called us for help."</div>
             </div>
-
             <div className="col-12 col-md-6 pb-3">
-              <div className={`${styles.imageContainer} shadow`} onClick={() => setModal3Show(true)}>
-                <Image src={KidderVideo} alt="" layout="responsive" objectFit="contain" />
+              <div className={`${styles.imageContainer} shadow`} onClick={() => setModal1Show(true)}>
+                <Image src={ThompsonVideo} alt="" layout="responsive" objectFit="contain" />
               </div>
-              <div className="fs-4 fw-bold py-1">Chelsea Kidder</div>
-              <div className={`${styles.officerQuote} pb-5 fst-italic`}>"The community side of policing is what I’m really passionate about. Being out in the community changes your perspective and lets you really help each day."</div>
-            </div>
-
-            <div className="col-12 col-md-6 pb-3">
-              <div className={`${styles.imageContainer} shadow`} onClick={() => setModal4Show(true)}>
-                <Image src={BrownVideo} alt="" layout="responsive" objectFit="contain" />
-              </div>
-              <div className="fs-4 fw-bold py-1">Darell Brown</div>
-              <div className={`${styles.officerQuote} pb-5 fst-italic`}>"To serve means something extremely important to me. It really means something when you can solve a problem in a community that can help them sleep better at night"</div>
+              <div className="fs-4 fw-bold py-1">JM Thompson</div>
+              <div className={`${styles.officerQuote} pb-5 fst-italic`}>"To be a public servant means to see something that needs to be done and to do it. If I see someone in need, or a victim who needs help, I’m the person who goes in and takes care of that."</div>
             </div>
           </div>
         </div>
