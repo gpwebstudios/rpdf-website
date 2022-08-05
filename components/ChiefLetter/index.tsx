@@ -4,7 +4,7 @@ import chiefPortrait from "../../public/chief.png"
 
 const ContactForm = () => {
   return (<>
-    <div className="container letter-container my-5">
+    <div className="container letter-container my-5 pb-5">
       <div className="card shadow">
         <div className="card-body p-5">
           <h3 className="card-title pb-4">A Message from The Chief</h3>
