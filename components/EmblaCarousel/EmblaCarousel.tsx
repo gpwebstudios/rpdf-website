@@ -1,6 +1,7 @@
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from 'next/image';
+import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { mediaByIndex } from "../../media";
 import { DotButton } from "./EmblaCarouselButtons";
@@ -8,13 +9,13 @@ import { DotButton } from "./EmblaCarouselButtons";
 
 const carouselContent = [
   {
-    header: 'Supporting Our Heroes', content: 'We are proud to support the Raleigh Police Department'
+    header: 'Supporting Our Heroes', content: 'We are proud to support the Raleigh Police Department', buttonHref: '/Meet-RPD'
   },
   {
-    header: 'Every dollar raised by the RPDF supports the health and safety of our community', content: ''
+    header: 'Every dollar raised by the RPDF supports the health and safety of our community', content: '', buttonHref: '/Our-Work'
   },
   {
-    header: 'Our mission is to advance public safety initiatives and promote police support for a safe and thriving community', content: ''
+    header: 'Our mission is to advance public safety initiatives and promote police support for a safe and thriving community', content: '', buttonHref: '/about'
   },
 ]
 
@@ -78,9 +79,11 @@ const EmblaCarousel = ({ slides }: { slides: any }) => {
                   <div className={'slide-content container'}>
                     <h2 className="slide-content-max-w">{carouselContent[index].header}</h2>
                     <p className="mt-1 mb-4 slide-content-max-w">{carouselContent[index].content}</p>
-                    <button className="btn btn-outline-light">
-                      Learn More
-                    </button>
+                    <Link href={carouselContent[index].buttonHref}>
+                      <button className="btn btn-outline-light">
+                        Learn More
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>

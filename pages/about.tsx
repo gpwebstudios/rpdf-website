@@ -54,15 +54,15 @@ const donorQuotes = [
     avatarSrc: GaffneyGunter
   },
   {
-    name: "RPDF Donor",
-    background: "Raleigh Police Department Foundation Donor",
-    quote: "There are so many incredible officers on the Raleigh Police force – and their efforts have a tremendous impact on our community. When funding falls short, I’m proud to donate to support the many outreach programs and initiatives that I know will help keep our community safe.",
+    name: "Steve Zelnak",
+    background: "Community Leader",
+    quote: "The starting point for a vibrant, prosperous and enjoyable community is the safety and security of its residents. I am pleased to support the Raleigh Police Chief and our RPD officers as they work to keep Raleigh safe.",
     avatarSrc: placeholderAvatar
   },
   {
-    name: "RPDF Donor",
-    background: "Raleigh Police Department Foundation Donor",
-    quote: "There are so many incredible officers on the Raleigh Police force – and their efforts have a tremendous impact on our community. When funding falls short, I’m proud to donate to support the many outreach programs and initiatives that I know will help keep our community safe.",
+    name: "Bryan Pfohl",
+    background: "CEO & Chairman, The Sunrock Group",
+    quote: "The reason I support the RPDF is simple — it’s about caring for those who are caring for us.",
     avatarSrc: placeholderAvatar
   }
 ]
@@ -151,7 +151,7 @@ const About = () => {
           ))}
         </div>
       </div>
-      {/* <div className="container-fluid bg-light border-top pb-5">
+      <div className="container-fluid bg-light border-top pb-5">
         <h2 className="text-center mt-5">Hear from Our Donors</h2>
         <div className={`container`}>
           <div className="row row-align-center my-3 g-5">
@@ -173,7 +173,7 @@ const About = () => {
             ))}
           </div>
         </div>
-      </div> */}
+      </div>
 
 
       <ContactForm />

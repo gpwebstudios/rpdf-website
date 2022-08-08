@@ -1,6 +1,6 @@
 import Navbar from "../components/layout/Navbar";
 import heroImg from "../public/ourworkhero_sm.png"
-import c1 from "../public/our-work-tech.png"
+import c1 from "../public/our-work-equipment.png"
 import c2 from "../public/our-work-training.png"
 import c3 from "../public/our-work-support.png"
 import c4 from "../public/our-work-community.png"
