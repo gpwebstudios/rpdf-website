@@ -44,7 +44,9 @@ const ContactForm = () => {
             <span className="text-break ps-2">info@raleighpolicefoundation.org</span>
           </div>
           <div className="social-icons pt-5">
-            {/* <span><FaFacebook /></span> */}
+            <span>
+              <a target="_blank" href="https://www.facebook.com/RaleighPoliceDepartmentFoundation" rel="noreferrer"><FaFacebook /></a>
+              </span>
             <span>
               <a target="_blank" href="https://www.instagram.com/raleighpolicefoundation/" rel="noreferrer"><FaInstagram /></a>
             </span>

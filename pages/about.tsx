@@ -49,7 +49,7 @@ const bodMembers = [
 const donorQuotes = [
   {
     name: "Gaffney Gunter",
-    background: "Community Leader and Raleigh Police Department Foundation Donor",
+    background: "Owner/Operator, Gunter Enterprises Inc.",
     quote: "There are so many incredible officers on the Raleigh Police force – and their efforts have a tremendous impact on our community. When funding falls short, I’m proud to donate to support the many outreach programs and initiatives that I know will help keep our community safe.",
     avatarSrc: GaffneyGunter
   },
