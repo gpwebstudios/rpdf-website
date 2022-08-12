@@ -45,7 +45,7 @@ const ContactForm = () => {
           </div>
           <div className="social-icons pt-5">
             <span>
-              <a target="_blank" href="https://www.facebook.com/RaleighPoliceDepartmentFoundation" rel="noreferrer"><FaFacebook /></a>
+              <a target="_blank" href="https://www.facebook.com/RaleighPoliceFoundation" rel="noreferrer"><FaFacebook /></a>
               </span>
             <span>
               <a target="_blank" href="https://www.instagram.com/raleighpolicefoundation/" rel="noreferrer"><FaInstagram /></a>
