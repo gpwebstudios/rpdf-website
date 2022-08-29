@@ -32,6 +32,12 @@ a {
   text-decoration: none;
 }
 
+#contactForm {
+  a:hover {
+    color: #FFF !important;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -166,7 +172,8 @@ a {
     span {
       padding-right: 1rem;
     }
-    a:hover{
+
+    a:hover {
       color: white;
     }
   }

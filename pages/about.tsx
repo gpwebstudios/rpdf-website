@@ -114,7 +114,7 @@ const About = () => {
 
           </div>
           <div className={`${styles.textLightGray} col py-5`}>
-            <p>The Raleigh Police Department Foundation (RPDF) was established in 2022 by local business and civic leaders to strengthen the Raleigh Police Department services and to promote public safety in Raleigh by organizing innovative programs and events that raise tax-deductible donations. An independent, non-profit 501c3 organization, RPDF dedicates its efforts to assuring safer neighborhoods and highly -skilled and equipped police through better technology, education, and programming.</p>
+            <p>The Raleigh Police Department Foundation (RPDF) was established in 2022 by local business and civic leaders to strengthen the Raleigh Police Department services and to promote public safety in Raleigh by organizing innovative programs and events that raise tax-deductible donations. An independent, non-profit 501c3 organization, RPDF dedicates its efforts to assuring safer neighborhoods and highly-skilled and equipped police through better technology, education, and programming. For tax purposes, our EIN number is 27-0326382.</p>
           </div>
         </div>
       </div>

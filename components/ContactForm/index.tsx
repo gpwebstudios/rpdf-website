@@ -39,14 +39,24 @@ const ContactForm = () => {
             Thank you for your interest in the Raleigh Police Department
             Foundation. Please complete the form and we’ll be in touch shortly.
           </div>
+          <div className="pt-3">
+            Mailing Address (Donation checks can be mailed here): <br />
+            P.O. Box 18283 <br />
+            Raleigh, NC 27619 <br />
+          </div>
+          <div className="pt-3">
+            <i>For tax purposes, our EIN # is 27-0326382</i>
+          </div>
           <div className="flex pt-3">
             <FaRegEnvelope />
-            <span className="text-break ps-2">info@raleighpolicefoundation.org</span>
+            <span className="text-break ps-2">
+              <a href="mailto:info@raleighpolicefoundation.org">info@raleighpolicefoundation.org</a>
+            </span>
           </div>
           <div className="social-icons pt-5">
             <span>
               <a target="_blank" href="https://www.facebook.com/RaleighPoliceFoundation" rel="noreferrer"><FaFacebook /></a>
-              </span>
+            </span>
             <span>
               <a target="_blank" href="https://www.instagram.com/raleighpolicefoundation/" rel="noreferrer"><FaInstagram /></a>
             </span>
