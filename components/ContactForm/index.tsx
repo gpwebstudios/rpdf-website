@@ -40,7 +40,8 @@ const ContactForm = () => {
             Foundation. Please complete the form and we’ll be in touch shortly.
           </div>
           <div className="pt-3">
-            Mailing Address (Donation checks can be mailed here): <br />
+            Mailing Address: <br />
+            (Donation checks can be mailed here) <br/>
             P.O. Box 18283 <br />
             Raleigh, NC 27619 <br />
           </div>
