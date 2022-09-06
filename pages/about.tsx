@@ -18,6 +18,7 @@ import MauriceSmith from "../public/boardMembers/Maurice-Smith.png";
 import placeholderAvatar from "../public/boardMembers/rpdfPlaceholder.png";
 import ScottDuckworth from "../public/boardMembers/Scott-Duckworth.png";
 import TempleSloan from "../public/boardMembers/Temple-Sloan.png";
+import MikeSmith from "../public/boardMembers/Mike-Smith.png"
 import chiefVideo from "../public/chiefVideo.png";
 import styles from "../styles/About.module.scss";
 
@@ -41,7 +42,9 @@ const bodMembers = [
   { name: "Gaffney Gunter", background: 'Owner/Operator, Gunter Enterprises Inc.', imgSrc: GaffneyGunter },
   { name: "Curry Huskes", background: 'Area Sales Manager, CPI Security', imgSrc: CurryHuskes },
   { name: "Bryan Pfohl", background: 'Chairman & CEO, Sunrock Group Holdings', imgSrc: placeholderAvatar },
+  { name: "Christina Alvarado Shanahan", background: 'RADM, US Navy (Ret)', imgSrc: placeholderAvatar },
   { name: "Temple Sloan, IV", background: 'Trail Creek Investments', imgSrc: TempleSloan },
+  { name: "Mike Smith", background: 'President, Kane Realty Group', imgSrc: MikeSmith },
   { name: "Chandler Spaulding", background: 'Director, Communications & Government Relations, Smith Anderson Law Firm', imgSrc: ChandlerSpaulding },
   { name: "Sylvia West", background: 'North Carolina Museum of History', imgSrc: placeholderAvatar },
 ];
