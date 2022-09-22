@@ -19,6 +19,10 @@ import placeholderAvatar from "../public/boardMembers/rpdfPlaceholder.png";
 import ScottDuckworth from "../public/boardMembers/Scott-Duckworth.png";
 import TempleSloan from "../public/boardMembers/Temple-Sloan.png";
 import MikeSmith from "../public/boardMembers/Mike-Smith.png"
+import TimGarner from '../public/boardMembers/Tim-Garner.png'
+import BryanPfohl from "../public/boardMembers/Bryan-Pfohl.png"
+import TinaShanahan from "../public/boardMembers/Tina-Shanahan.png"
+import SylviaWest from "../public/boardMembers/Sylvia-West.png"
 import chiefVideo from "../public/chiefVideo.png";
 import styles from "../styles/About.module.scss";
 
@@ -37,16 +41,16 @@ const bodOfficers = [
 const bodMembers = [
   { name: "Larry Barbour", background: 'President & CEO, North State Bank', imgSrc: LarryBarbour },
   { name: "Scott Duckworth", background: 'Regional President, Brasfield & Gorrie', imgSrc: ScottDuckworth },
-  { name: "Dr. Tim Garner", background: 'Raleigh Neurosurgical Clinic', imgSrc: placeholderAvatar },
+  { name: "Dr. Tim Garner", background: 'Raleigh Neurosurgical Clinic', imgSrc: TimGarner },
   { name: "Laurie Geer", background: 'Community Leader', imgSrc: LaurieGeer },
   { name: "Gaffney Gunter", background: 'Owner/Operator, Gunter Enterprises Inc.', imgSrc: GaffneyGunter },
   { name: "Curry Huskes", background: 'Area Sales Manager, CPI Security', imgSrc: CurryHuskes },
-  { name: "Bryan Pfohl", background: 'Chairman & CEO, Sunrock Group Holdings', imgSrc: placeholderAvatar },
-  { name: "Christina Alvarado Shanahan", background: 'RADM, US Navy (Ret)', imgSrc: placeholderAvatar },
+  { name: "Bryan Pfohl", background: 'Chairman & CEO, Sunrock Group Holdings', imgSrc: BryanPfohl },
+  { name: "Christina Alvarado Shanahan", background: 'RADM, US Navy (Ret)', imgSrc: TinaShanahan },
   { name: "Temple Sloan, IV", background: 'Trail Creek Investments', imgSrc: TempleSloan },
   { name: "Mike Smith", background: 'President, Kane Realty Group', imgSrc: MikeSmith },
   { name: "Chandler Spaulding", background: 'Director, Communications & Government Relations, Smith Anderson Law Firm', imgSrc: ChandlerSpaulding },
-  { name: "Sylvia West", background: 'North Carolina Museum of History', imgSrc: placeholderAvatar },
+  { name: "Sylvia West", background: 'North Carolina Museum of History', imgSrc: SylviaWest },
 ];
 
 const donorQuotes = [
@@ -66,7 +70,7 @@ const donorQuotes = [
     name: "Bryan Pfohl",
     background: "CEO & Chairman, The Sunrock Group",
     quote: "The reason I support the RPDF is simple — it’s about caring for those who are caring for us.",
-    avatarSrc: placeholderAvatar
+    avatarSrc: BryanPfohl
   }
 ]
 
@@ -164,7 +168,7 @@ const About = () => {
                   <p>"{donor.quote}"</p>
                   <div className={`${index % 2 === 0 ? '' : 'justify-content-end'} d-flex align-items-center`}>
                     <div className={`${index % 2 === 0 ? 'pe-3' : 'order-2 justify-content-end ps-3'} ${styles.donorQuoteAvatar}`}>
-                      <Image src={donor.avatarSrc} alt="RPDF Logo" width={100} height={100} className={` rounded-circle`} />
+                      <Image src={donor.avatarSrc} alt="RPDF Logo" width={100} height={100} className={`rounded-circle border border-2`} />
                     </div>
                     <div className={index % 2 === 0 ? '' : 'text-end'}>
                       — {donor.name}<br /> <i className={styles.textLightGray}>{donor.background}</i>
