@@ -16,6 +16,7 @@ import LarryBarbour from "../public/boardMembers/Larry-Barbour.png";
 import LaurieGeer from "../public/boardMembers/Laurie-Geer.png";
 import MauriceSmith from "../public/boardMembers/Maurice-Smith.png";
 import placeholderAvatar from "../public/boardMembers/rpdfPlaceholder.png";
+import JudySteveZelnak from "../public/boardMembers/Judy-Steve-Zelnak.png";
 import ScottDuckworth from "../public/boardMembers/Scott-Duckworth.png";
 import TempleSloan from "../public/boardMembers/Temple-Sloan.png";
 import MikeSmith from "../public/boardMembers/Mike-Smith.png"
@@ -55,16 +56,16 @@ const bodMembers = [
 
 const donorQuotes = [
   {
+    name: "Judy & Steve Zelnak",
+    background: "Community Leaders",
+    quote: "The starting point for a vibrant, prosperous and enjoyable community is the safety and security of its residents. We are pleased to support the Raleigh Police Chief and our RPD officers as they work to keep Raleigh safe.",
+    avatarSrc: JudySteveZelnak
+  },
+  {
     name: "Gaffney Gunter",
     background: "Owner/Operator, Gunter Enterprises Inc.",
     quote: "There are so many incredible officers on the Raleigh Police force – and their efforts have a tremendous impact on our community. When funding falls short, I’m proud to donate to support the many outreach programs and initiatives that I know will help keep our community safe.",
     avatarSrc: GaffneyGunter
-  },
-  {
-    name: "Steve Zelnak",
-    background: "Community Leader",
-    quote: "The starting point for a vibrant, prosperous and enjoyable community is the safety and security of its residents. I am pleased to support the Raleigh Police Chief and our RPD officers as they work to keep Raleigh safe.",
-    avatarSrc: placeholderAvatar
   },
   {
     name: "Bryan Pfohl",
