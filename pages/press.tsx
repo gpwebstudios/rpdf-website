@@ -1,5 +1,5 @@
 import Navbar from "../components/layout/Navbar";
-import heroImg from "../public/ourworkhero_sm.png"
+import heroImg from "../public/raleigh-city.png"
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/layout/Footer"
 import HeroImage from "../components/layout/HeroImage";
