@@ -1,0 +1,37 @@
+.news {
+    transition: 500ms linear;
+}
+
+.news:hover {
+    transform: scale(1.03);
+}
+
+.link {
+    color: #1a375b;
+    font-weight: bolder;
+    position: absolute;
+    margin-top: .5rem;
+}
+
+.date {
+    color: #868e96;
+    font-size: 1rem;
+}
+
+.textLightGray {
+    color: #868E96;
+  }
+
+.left {
+    width: 50%; 
+    height: 16vh; 
+    float: left;
+    margin-bottom: 1rem;
+    margin-right: 1rem !important;
+}
+
+.right {
+    margin-left: 50%; 
+    height: 16vh;
+    margin-bottom: 1rem;
+}
