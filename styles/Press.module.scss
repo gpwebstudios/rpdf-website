@@ -1,5 +1,5 @@
 .news {
-    transition: 500ms linear;
+    transition: 200ms linear;
 }
 
 .news:hover {
@@ -9,13 +9,10 @@
 .link {
     color: #1a375b;
     font-weight: bolder;
-    position: absolute;
-    margin-top: .5rem;
 }
 
 .date {
     color: #868e96;
-    font-size: 1rem;
 }
 
 .textLightGray {
@@ -23,15 +20,12 @@
   }
 
 .left {
-    width: 50%; 
-    height: 16vh; 
+    width: 100%;  
     float: left;
     margin-bottom: 1rem;
     margin-right: 1rem !important;
 }
 
 .right {
-    margin-left: 50%; 
-    height: 16vh;
     margin-bottom: 1rem;
 }
