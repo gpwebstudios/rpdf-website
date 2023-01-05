@@ -14,14 +14,15 @@
     "@formspree/react": "^2.3.0",
     "bootstrap": "^5.2.0",
     "embla-carousel-autoplay": "^7.0.0-rc05",
-    "next": "^12.2.2",
+    "next": "^12.3.4",
     "react": "^18.2.0",
     "react-bootstrap": "^2.4.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-player": "^2.10.1",
     "sass": "^1.54.0",
-    "sharp": "^0.30.7"
+    "sharp": "^0.30.7",
+    "watch": "^1.0.2"
   },
   "devDependencies": {
     "@types/bootstrap": "^5.1.13",
