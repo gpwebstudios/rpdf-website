@@ -1,31 +1,16 @@
 .news {
-    transition: 200ms linear;
+  transition: 200ms linear;
 }
 
 .news:hover {
-    transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 .link {
-    color: #1a375b;
-    font-weight: bolder;
-}
-
-.date {
-    color: #868e96;
+  color: #1a375b;
+  font-weight: bolder;
 }
 
 .textLightGray {
-    color: #868E96;
-  }
-
-.left {
-    width: 100%;  
-    float: left;
-    margin-bottom: 1rem;
-    margin-right: 1rem !important;
-}
-
-.right {
-    margin-bottom: 1rem;
+  color: #868e96;
 }
