@@ -7,29 +7,29 @@ import styles from "../styles/Press.module.scss";
 
 const newsArticles = [
     {
-        date: 'October 5, 2022',
-        title: 'Raleigh Police Host Coffee with a Cop',
-        description: 'In an effort to increase transparency, engage in the community and develop mutual trust and respect, Raleigh police officers on Wednesday are spread out across the city hoping to chat with the community.',
+        date: 'SAMPLE',
+        title: 'SAMPLE',
+        description: 'SAMPLE',
         link: 'https://www.wral.com/raleigh-police-host-coffee-with-a-cop-to-break-down-barriers/20507993/'
     },
     {
-        date: 'November 5, 2022',
-        title: 'RPDF Purchases New Equipment for RPD',
-        description: 'Courtesy of generation donations from RPDF supporters, the RPDF was able to purchase new equipment for the RPD.',
-        link: 'https://www.google.com'
+        date: 'SAMPLE',
+        title: 'SAMPLE',
+        description: 'SAMPLE',
+        link: 'https://www.cbs17.com/news/local-news/wake-county-news/no-more-horsing-around-raleigh-police-add-new-horse-to-department/'
     },
     {
-        date: 'December 5, 2022',
-        title: 'RPDF Hosts 1st Annual Holiday Party',
-        description: 'RPDF hosted its first annual holiday party for RPD officers and their families.',
-        link: 'https://www.google.com'
+        date: 'SAMPLE',
+        title: 'SAMPLE',
+        description: 'SAMPLE',
+        link: 'https://abc11.com/raleigh-police-coffee-with-a-cop-day-downtown-chief-estella-patterson/12297325/'
     },
-    {
-        date: 'January 5, 2023',
-        title: 'Raleigh Police Save Kittens',
-        description: 'Raleigh police officers saved a litter of kittens from a burning building.',
-        link: 'https://www.google.com'
-    },
+    /* {
+        date: '',
+        title: '',
+        description: '',
+        link: ''
+    }, */
 ]
 
 const Press = () => {
