@@ -1,34 +1,14 @@
-import { useForm, ValidationError } from '@formspree/react';
-import { useState } from "react";
-import { FaFacebook, FaInstagram, FaRegEnvelope, FaCheck } from "react-icons/fa";
+import { useForm, ValidationError } from "@formspree/react";
+import {
+  FaAmazon,
+  FaCheck,
+  FaFacebook,
+  FaInstagram,
+  FaRegEnvelope,
+} from "react-icons/fa";
 
 const ContactForm = () => {
   const [state, handleSubmit] = useForm("maykwabk");
-
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [county, setCounty] = useState('');
-  const [city, setCity] = useState('');
-  const [email, setEmail] = useState('');
-  const [phoneNumber, setPhoneNumber] = useState('');
-  const [message, setMessage] = useState('');
-  // const handleSubmit = (e: { preventDefault: () => void; }) => {
-  //   e.preventDefault();
-  //   const data = {
-  //     firstName,
-  //     lastName,
-  //     county,
-  //     city,
-  //     email,
-  //     phoneNumber,
-  //     message
-  //   };
-  //   fetch('/api/contact', {
-  //     method: 'post',
-  //     body: JSON.stringify(data),
-  //   });
-  // }
-
 
   return (
     <div id="contactForm" className="container my-5">
@@ -41,7 +21,7 @@ const ContactForm = () => {
           </div>
           <div className="pt-3">
             Mailing Address: <br />
-            (Donation checks can be mailed here) <br/>
+            (Donation checks can be mailed here) <br />
             P.O. Box 18283 <br />
             Raleigh, NC 27619 <br />
           </div>
@@ -51,16 +31,39 @@ const ContactForm = () => {
           <div className="flex pt-3">
             <FaRegEnvelope />
             <span className="text-break ps-2">
-              <a href="mailto:info@raleighpolicefoundation.org">info@raleighpolicefoundation.org</a>
+              <a href="mailto:info@raleighpolicefoundation.org">
+                info@raleighpolicefoundation.org
+              </a>
             </span>
           </div>
-          <div className="social-icons pt-5">
-            <span>
-              <a target="_blank" href="https://www.facebook.com/RaleighPoliceFoundation" rel="noreferrer"><FaFacebook /></a>
-            </span>
-            <span>
-              <a target="_blank" href="https://www.instagram.com/raleighpolicefoundation/" rel="noreferrer"><FaInstagram /></a>
-            </span>
+          <div className="social-icons pt-5 d-flex">
+            <div className="pe-3 d-flex align-items-center">
+              <a
+                target="_blank"
+                href="https://www.facebook.com/RaleighPoliceFoundation"
+                rel="noreferrer"
+              >
+                <FaFacebook />
+              </a>
+            </div>
+            <div className="pe-3 d-flex align-items-center">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/raleighpolicefoundation/"
+                rel="noreferrer"
+              >
+                <FaInstagram />
+              </a>
+            </div>
+            <div className="pe-3 d-flex align-items-center">
+              <a
+                target="_blank"
+                href="https://smile.amazon.com/ch/27-0326382?ref_=pe_1723670_203812010"
+                rel="noreferrer"
+              >
+                <FaAmazon />
+              </a>
+            </div>
           </div>
         </div>
         <div className="col-md-8 p-4">
@@ -149,29 +152,41 @@ const ContactForm = () => {
                 rows={3}
               ></textarea>
             </div>
-            <div className={`${state.succeeded ? 'justify-content-between' : 'justify-content-end'} d-flex  align-items-center pt-3`} >
-              {state.succeeded &&
-                <div className="alert alert-success d-flex align-items-center my-2 me-2" role="alert">
-                  <div className='d-flex align-items-center'>
+            <div
+              className={`${
+                state.succeeded
+                  ? "justify-content-between"
+                  : "justify-content-end"
+              } d-flex  align-items-center pt-3`}
+            >
+              {state.succeeded && (
+                <div
+                  className="alert alert-success d-flex align-items-center my-2 me-2"
+                  role="alert"
+                >
+                  <div className="d-flex align-items-center">
                     <FaCheck />
                   </div>
-                  <div className='px-3'>
+                  <div className="px-3">
                     Thank you for your message! We'll get back to you shortly.
                   </div>
                 </div>
-              }
+              )}
 
               <div>
-                <button className="btn btn-primary" type="submit" disabled={state.submitting}>
+                <button
+                  className="btn btn-primary"
+                  type="submit"
+                  disabled={state.submitting}
+                >
                   Submit
                 </button>
               </div>
             </div>
-
           </form>
         </div>
       </div>
     </div>
   );
-}
-export default ContactForm
+};
+export default ContactForm;
