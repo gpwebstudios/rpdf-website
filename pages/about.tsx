@@ -35,7 +35,7 @@ const bodOfficers = [
   { name: "Brenda Gibson", position: 'Chair', background: 'Community Leader', imgSrc: BrendaGibson },
   { name: "Christine Craig", position: 'Vice Chair', background: 'Vice President, Government Relations', background2: 'WakeMed Health & Hospitals', imgSrc: ChristineCraig },
   { name: "Kristye Brackett", position: 'Secretary', background: 'Senior Counsel, CapDev', imgSrc: KristyeBrackett },
-  { name: "Maurice Smith", position: 'Treasurer', background: 'CEO, Local Government Federal Credit Union', imgSrc: MauriceSmith },
+  { name: "Maurice Smith", position: 'Treasurer', background: 'Maurice Smith Attorney & Counselor at Law, M Smith Law PLLC', imgSrc: MauriceSmith },
   { name: "Judy Zelnak", position: 'Executive Committee, Member-at-Large', background: 'Community Leader', imgSrc: JudyZelnak },
 ];
 
