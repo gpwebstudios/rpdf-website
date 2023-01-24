@@ -48,7 +48,7 @@ a {
     color: #1A375B !important;
     transition: none;
     border-bottom: 2px solid transparent;
-    max-width: 111px;
+    max-width: 117px;
 
     &:hover,
     a:hover {
@@ -234,4 +234,15 @@ a {
 
 .modal-content {
   border: 0;
+}
+
+.officer-card {
+  cursor: pointer;
+  flex-direction: row;
+  align-items: center;
+  min-width: 340px;
+}
+.officer-card:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }

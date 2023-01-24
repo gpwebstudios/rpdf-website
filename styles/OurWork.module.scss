@@ -1,10 +1,11 @@
 .main {
     min-height: 100vh;
-    padding: 4rem 0;
+    padding: 4rem 0 2rem;
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom: 1px solid #dee2e6;
 }
 
 .title {
@@ -47,6 +48,10 @@
     align-items: center;
 }
 
+.mw600{
+    max-width: 600px !important;
+}
+
 .card:hover,
 .card:focus,
 .card:active {
@@ -75,6 +80,11 @@
 .section {
     background-color: #f1f1f1;
 }
+
+.link {
+    // color: #1a375b;
+  }
+  
 
 /* .image {
     min-width: 100%;

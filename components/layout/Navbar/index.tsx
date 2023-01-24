@@ -9,6 +9,7 @@ const navData = [
   { linkText: "Our Work", href: '/Our-Work' },
   { linkText: "Meet the RPD", href: '/Meet-RPD' },
   { linkText: "Press", href: '/press' },
+  { linkText: "Fallen Officers", href: '/fallen-officers' },
   { linkText: "Contact", href: '#contactForm' },
 
 ]
@@ -29,7 +30,7 @@ const Navbar = () => {
         <div className="collapse navbar-collapse justify-content-end" id="rpdfNavbar">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             {navData.map((data, index) => (
-              <li className={`nav-item ${index == 4 ? 'pe-2' : ''}`} key={index}>
+              <li className={`nav-item ${index == 5 ? 'pe-2' : ''}`} key={index}>
                 <Link href={data.href}>
                   <a className={`${router.pathname === data.href ? "active" : ""} nav-link`}>{data.linkText}</a>
                 </Link>
