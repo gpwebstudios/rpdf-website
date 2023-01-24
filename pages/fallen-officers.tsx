@@ -75,7 +75,7 @@ const Press = () => {
       <div className="container-fluid bg-light border-top pb-5">
         <div className={`${styles.textLightGray} col pt-5 pb-3 text-center`}>
           <h4>
-            The RPDF remembers officers fallen in the line of duty. <br /> Click
+            The RPDF remembers officers who lost their lives in the line of duty. <br /> Click
             on the photos to learn more about these heroes
           </h4>
         </div>
