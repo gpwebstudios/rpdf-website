@@ -66,7 +66,7 @@ const fallenOfficers = [
   },
 ];
 
-const Press = () => {
+const FallenOfficers = () => {
   return (
     <div>
       <Navbar />
@@ -76,7 +76,7 @@ const Press = () => {
         <div className={`${styles.textLightGray} col pt-5 pb-3 text-center`}>
           <h4>
             The RPDF remembers officers who lost their lives in the line of duty. <br /> Click
-            on the photos to learn more about these heroes
+            on the photos to learn more about these heroes:
           </h4>
         </div>
         <div className="container text-center">
@@ -99,7 +99,7 @@ const Press = () => {
                         width={100}
                       />
                     </div>
-                    <div className={`${styles.grow1}`}>
+                    <div className={`${styles.grow1} mx-2`}>
                       <div className="fs-4 fw-bold py-1">{data.name}</div>
                       <div className={`${styles.textLightGray}`}>
                         {data.background}
@@ -119,4 +119,4 @@ const Press = () => {
   );
 };
 
-export default Press;
+export default FallenOfficers;
