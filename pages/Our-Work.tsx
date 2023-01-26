@@ -132,7 +132,7 @@ const OurWork = () => {
             >
               <strong>Team Raleigh</strong>
             </a>
-            is a cycling group of current and retired law enforcement officers.
+            &nbsp; is a cycling group of current and retired law enforcement officers.
             They are dedicated to remembering the fallen and inspiring the
             standing. The core of the team is from the Raleigh Police
             Department, but there are members from other local, state and
