@@ -130,16 +130,17 @@ const OurWork = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <strong>Team Raleigh LEU </strong>
+              <strong>Team Raleigh</strong>
             </a>
-            is a group of current and retired law enforcement cyclists. They are
-            dedicated to Remembering the Fallen and Inspiring the Standing. The
-            core of the team are members of the Raleigh Police Department
-            however a few are from other agencies. Their core mission during the
-            year is to facilitate and staff the Wreath Laying Ceremonies for the
-            Raleigh Police Officers that have died in the line of duty and in
-            May of each year they participate in bike ride to Washington DC to
-            honor all fallen officers across the United States.
+            is a cycling group of current and retired law enforcement officers.
+            They are dedicated to remembering the fallen and inspiring the
+            standing. The core of the team is from the Raleigh Police
+            Department, but there are members from other local, state and
+            federal agencies as well. Team Raleigh assists in facilitating and
+            staffing annual wreath laying ceremonies for each Raleigh Police
+            Officer that died in the line of duty. In May of each year, Team
+            Raleigh cycles 500 miles from Raleigh to Washington DC to honor all
+            fallen officers across the United States.
           </p>
         </div>
       </main>
