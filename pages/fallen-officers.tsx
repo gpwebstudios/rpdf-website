@@ -24,7 +24,7 @@ const fallenOfficers = [
   },
   {
     name: "Patrolman Robert Earl Sparks",
-    background: "Saturday, March 9, 1968",
+    background: "Saturday, March 8, 1968",
     imgSrc: sparks,
     link: "https://www.odmp.org/officer/12592-patrolman-robert-earl-sparks",
   },
