@@ -24,6 +24,9 @@ import TimGarner from '../public/boardMembers/Tim-Garner.png'
 import BryanPfohl from "../public/boardMembers/Bryan-Pfohl.png"
 import TinaShanahan from "../public/boardMembers/Tina-Shanahan.png"
 import SylviaWest from "../public/boardMembers/Sylvia-West.png"
+import TomFritsch from "../public/boardMembers/Tom-Fritsch.png"
+import BillBaker from "../public/boardMembers/Bill-Baker.png"
+import KadeRoss from "../public/boardMembers/Kade-Ross.png"
 import chiefVideo from "../public/chiefVideo.png";
 import styles from "../styles/About.module.scss";
 
@@ -52,6 +55,9 @@ const bodMembers = [
   { name: "Mike Smith", background: 'President, Kane Realty Group', imgSrc: MikeSmith },
   { name: "Chandler Spaulding", background: 'Director, Communications & Government Relations, Smith Anderson Law Firm', imgSrc: ChandlerSpaulding },
   { name: "Sylvia West", background: 'North Carolina Museum of History', imgSrc: SylviaWest },
+  { name: "Tom Fritsch", background: 'Senior Managing Director, CRBE', imgSrc: TomFritsch },
+  { name: "Bill Baker", background: 'Development Partner, Keith Corporation', imgSrc: BillBaker },
+  { name: "Kade Ross", background: 'Chief Information Officer, Bandwidth', imgSrc: KadeRoss },
 ];
 
 const donorQuotes = [
