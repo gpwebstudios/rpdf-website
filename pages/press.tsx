@@ -9,8 +9,8 @@ const newsArticles = [
   {
     date: "10/30/23",
     title: "RPDF Adds Three New Board Members",
-    description: "The Raleigh Police Department Foundation (RPDF) announces three new members elected to its Board of Directors: Bill Baker, Development Partner, Keith Corporation; Tom Fritsch, Senior Managing Director, CBRE; and Kade Ross, Chief Information Officer, Bandwidth. These Raleigh business leaders join 17 founding board members who have served since the Foundation's inception in 2022. Chaired by Brenda Gibson, the Board has raised over $3 million in its first year. Those funds will support the Raleigh Police Department's mission of making Raleigh the safest city in America.",
-    link: "",
+    description: "The Raleigh Police Department Foundation (RPDF) announces three new members elected to its Board of Directors: Bill Baker, Development Partner, Keith Corporation; Tom Fritsch, Senior Managing Director, CBRE; and Kade Ross, Chief Information Officer, Bandwidth.",
+    link: "https://www.instagram.com/p/CzENujArWml/?next=%2Fp%2FCPGWXObLarf%2F&hl=hr&img_index=1",
   },
   {
     date: "10/13/23",
