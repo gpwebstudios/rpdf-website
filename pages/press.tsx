@@ -7,6 +7,36 @@ import styles from "../styles/Press.module.scss";
 
 const newsArticles = [
   {
+    date: "10/30/23",
+    title: "RPDF Adds Three New Board Members",
+    description: "The Raleigh Police Department Foundation (RPDF) announces three new members elected to its Board of Directors: Bill Baker, Development Partner, Keith Corporation; Tom Fritsch, Senior Managing Director, CBRE; and Kade Ross, Chief Information Officer, Bandwidth.",
+    link: "https://www.instagram.com/p/CzENujArWml/?next=%2Fp%2FCPGWXObLarf%2F&hl=hr&img_index=1",
+  },
+  {
+    date: "10/13/23",
+    title: "Meet Teddy: The RPD’s Newest Member",
+    description: "Meet Teddy, the newest team member of the Raleigh Police Department. Teddy is the police department's first-ever therapy dog in training.",
+    link: "https://www.wral.com/story/meet-teddy-raleigh-police-department-welcomes-newest-member/21095437/",
+  },
+  {
+    date: "09/14/23",
+    title: "RPD Gets Enduro Bikes and Adds Greenway Unit",
+    description: "Raleigh police are expanding their Greenway unit in hopes of improving public safety.",
+    link: "https://www.cbs17.com/news/local-news/wake-county-news/raleigh-police-add-new-enduro-bikes-to-greenway-unit-to-increase-safety-patrols/",
+  },
+  {
+    date: "05/20/23",
+    title: "RPD Connects with Local Community for National Police Week",
+    description: "National Police Week has come to an end, and Raleigh officers mark it with a meet and greet at the Midtown Farmers Market Saturday afternoon.",
+    link: "https://www.wral.com/story/raleigh-police-celebrate-end-of-national-police-week-by-connecting-with-community/20872349/",
+  },
+  {
+    date: "05/14/23",
+    title: "WRAL Tower lights up blue to honor National Police Week",
+    description: "The view on Western Boulevard will look a little different this week, as the WRAL News tower lights up blue in honor of National Police Week.",
+    link: "https://www.wral.com/story/wral-tower-lights-up-blue-to-honor-national-police-week/20859400/",
+  },
+  {
     date: "12/21/22",
     title: "Raleigh Police add new horse to department",
     description: "Luna, a Percheron/Quarter horse mix, began her first shift with the police department on Wednesday after receiving new “shoes” for Christmas.",
