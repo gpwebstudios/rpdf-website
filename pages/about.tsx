@@ -43,21 +43,21 @@ const bodOfficers = [
 ];
 
 const bodMembers = [
+  { name: "Bill Baker", background: 'Development Partner, Keith Corporation', imgSrc: BillBaker },
   { name: "Larry Barbour", background: 'President & CEO, North State Bank', imgSrc: LarryBarbour },
   { name: "Scott Duckworth", background: 'Regional President, Brasfield & Gorrie', imgSrc: ScottDuckworth },
+  { name: "Tom Fritsch", background: 'Senior Managing Director, CBRE', imgSrc: TomFritsch },
   { name: "Dr. Tim Garner", background: 'Raleigh Neurosurgical Clinic', imgSrc: TimGarner },
   { name: "Laurie Geer", background: 'Community Leader', imgSrc: LaurieGeer },
   { name: "Gaffney Gunter", background: 'Owner/Operator, Gunter Enterprises Inc.', imgSrc: GaffneyGunter },
   { name: "Curry Huskes", background: 'Area Sales Manager, CPI Security', imgSrc: CurryHuskes },
   { name: "Bryan Pfohl", background: 'Chairman & CEO, Sunrock Group Holdings', imgSrc: BryanPfohl },
+  { name: "Kade Ross", background: 'Chief Information Officer, Bandwidth', imgSrc: KadeRoss },
   { name: "Christina Alvarado Shanahan", background: 'RADM, US Navy (Ret)', imgSrc: TinaShanahan },
   { name: "Temple Sloan, IV", background: 'Trail Creek Investments', imgSrc: TempleSloan },
   { name: "Mike Smith", background: 'President, Kane Realty Group', imgSrc: MikeSmith },
   { name: "Chandler Spaulding", background: 'Director, Communications & Government Relations, Smith Anderson Law Firm', imgSrc: ChandlerSpaulding },
   { name: "Sylvia West", background: 'North Carolina Museum of History', imgSrc: SylviaWest },
-  { name: "Tom Fritsch", background: 'Senior Managing Director, CRBE', imgSrc: TomFritsch },
-  { name: "Bill Baker", background: 'Development Partner, Keith Corporation', imgSrc: BillBaker },
-  { name: "Kade Ross", background: 'Chief Information Officer, Bandwidth', imgSrc: KadeRoss },
 ];
 
 const donorQuotes = [
