@@ -16,7 +16,7 @@ import styles from '../styles/MeetRPD.module.scss';
 const officerData = [
   { name: "JM Thompson", quote: "To be a public servant means to see something that needs to be done and to do it. If I see someone in need, or a victim who needs help, I’m the person who goes in and takes care of that. ", imgSrc: ThompsonVideo },
   { name: "MT Rodrigues", quote: "Typically, when someone calls 911, it could be the worst day of their life. As police officers, when we respond to a call, our goal is to leave that person in a better state than when they called us for help.", imgSrc: RodriguesVideo },
-  { name: "Chelsea Kidder", quote: "The community side of policing is what I’m really passionate about. Being out in the community changes your perspective and lets you really help each day.", imgSrc: KidderVideo },
+  { name: "Chelsea Baldy", quote: "The community side of policing is what I’m really passionate about. Being out in the community changes your perspective and lets you really help each day.", imgSrc: KidderVideo },
   { name: "Darell Brown", quote: "To serve means something extremely important to me. It really means something when you can solve a problem in a community that can help them sleep better at night.", imgSrc: BrownVideo },
 ]
 

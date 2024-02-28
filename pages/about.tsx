@@ -35,11 +35,12 @@ import styles from "../styles/About.module.scss";
 
 
 const bodOfficers = [
-  { name: "Brenda Gibson", position: 'Chair', background: 'Community Leader', imgSrc: BrendaGibson },
-  { name: "Christine Craig", position: 'Vice Chair', background: 'Vice President, Government Relations', background2: 'WakeMed Health & Hospitals', imgSrc: ChristineCraig },
+  { name: "Brenda Gibson", position: 'President', background: 'Community Leader', imgSrc: BrendaGibson },
+  { name: "Christine Craig", position: 'Vice President', background: 'Vice President, Government Relations', background2: 'WakeMed Health & Hospitals', imgSrc: ChristineCraig },
   { name: "Kristye Brackett", position: 'Secretary', background: 'Senior Counsel, CapDev', imgSrc: KristyeBrackett },
   { name: "Maurice Smith", position: 'Treasurer', background: 'Attorney & Counselor at Law, M Smith Law PLLC', imgSrc: MauriceSmith },
   { name: "Judy Zelnak", position: 'Executive Committee, Member-at-Large', background: 'Community Leader', imgSrc: JudyZelnak },
+  { name: "Mike Smith", position: 'Governance Chair', background: 'President, Kane Realty Group', imgSrc: MikeSmith },
 ];
 
 const bodMembers = [
@@ -55,7 +56,6 @@ const bodMembers = [
   { name: "Kade Ross", background: 'Chief Information Officer, Bandwidth', imgSrc: KadeRoss },
   { name: "Christina Alvarado Shanahan", background: 'RADM, US Navy (Ret)', imgSrc: TinaShanahan },
   { name: "Temple Sloan, IV", background: 'Trail Creek Investments', imgSrc: TempleSloan },
-  { name: "Mike Smith", background: 'President, Kane Realty Group', imgSrc: MikeSmith },
   { name: "Chandler Spaulding", background: 'Director, Communications & Government Relations, Smith Anderson Law Firm', imgSrc: ChandlerSpaulding },
   { name: "Sylvia West", background: 'North Carolina Museum of History', imgSrc: SylviaWest },
 ];
@@ -165,7 +165,7 @@ const About = () => {
           ))}
         </div>
       </div>
-      <div className="container-fluid bg-light border-top pb-5">
+      {/* <div className="container-fluid bg-light border-top pb-5">
         <h2 className="text-center mt-5">Hear from Our Donors</h2>
         <div className={`container`}>
           <div className="row row-align-center my-3 g-5">
@@ -187,7 +187,7 @@ const About = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
 
       <ContactForm />

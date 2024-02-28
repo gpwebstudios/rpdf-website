@@ -8,6 +8,7 @@ const navData = [
   { linkText: "About Us", href: '/about' },
   { linkText: "Our Work", href: '/Our-Work' },
   { linkText: "Meet the RPD", href: '/Meet-RPD' },
+  { linkText: "Donors", href: '/donors' },
   { linkText: "Press", href: '/press' },
   { linkText: "Fallen Officers", href: '/fallen-officers' },
   { linkText: "Contact", href: '#contactForm' },
