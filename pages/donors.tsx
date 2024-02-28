@@ -10,15 +10,20 @@ import larrybarbour from "../public/larrybarbour.png";
 import toddandlaura from "../public/toddandlaura.png";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/layout/Footer";
+import HeroImage from "../components/layout/HeroImage";
+import heroImg from "../public/support_sm.png";
+import flyer from "../public/rpdf-flyer.png";
+
 
 const Donors = () => {
   return (
     <div>
       <Navbar />
-      <div className={styles.header}>
+      <HeroImage imageSrc={heroImg} heroText={"How Our Donors Make a Difference"} />
+      {/* <div className={styles.header}>
         <div className="pb-2 pt-2">
           <h2 className={styles.title}>
-            How our donors make a difference
+            
           </h2>
         </div>
         <div className={`pb-5 ${styles.details}`}>
@@ -31,11 +36,31 @@ const Donors = () => {
             To all who have heeded the call THANK YOU.
           </h5>
         </div>
+      </div> */}
+      <div className={`${styles.textLightGray} col p-5 pb-2 text-center`}>
+        <h5 className={styles.title}>
+          Individual and corporate donations to the Raleigh Police Department Foundation are vital to the support the Foundation can give to the RPD.
+          Since its founding in 2022, the Board has raised over $3 million to enhance the programs and services so very necessary in making Raleigh the safest city in America.
+          While city tax dollars pay salaries and operations, the RPDF steps in to provide a margin of excellence.
+          The Raleigh business community, especially, has rallied around the Foundation.
+          We are grateful to those generous corporations and individuals who have stepped up to fund the important work of RPD officers-- from electric bicycles for Greenway patrols to youth basketball camps for at-risk teens.
+          To all who have heeded the call THANK YOU.
+        </h5>
       </div>
-      <Flyer />
+      <div
+        className={`${styles.card} ${styles.mw600}  mx-auto text-center p-2 my-5`}
+      >
+        <Image
+          src={flyer}
+          alt="Donor Flyer"
+          className="border border-4 rounded-1"
+          width={1000}
+          layout="responsive"
+        />
+      </div>
       <main className={styles.main}>
         <div className="pb-5">
-          <h2 className={styles.title}>
+          <h2 className={styles.title2}>
             Donor Highlights
           </h2>
         </div>

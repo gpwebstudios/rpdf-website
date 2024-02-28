@@ -18,7 +18,7 @@
     color: white;
 }
 
-.title {
+.title2 {
     margin: 0;
     line-height: 1.15;
     font-size: 2.5rem;
@@ -135,4 +135,33 @@
     margin-left: auto;
     margin-right: auto;
     color: #23578E;
+}
+
+.textLightGray {
+    color: #868e96;
+  }
+
+  .title {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 1.25rem;
+    max-width: 950px;
+    margin: auto;
+    padding: 1rem 0rem;
+}
+
+.card {
+    margin: 1rem 2rem;
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    max-width: 500px;
+    max-height: 100%;
+    align-items: center;
+}
+
+.mw600{
+    max-width: 600px !important;
 }
