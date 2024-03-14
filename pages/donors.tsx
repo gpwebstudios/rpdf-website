@@ -3,6 +3,9 @@ import Navbar from "../components/layout/Navbar";
 import styles from "../styles/Donors.module.scss";
 import Flyer from "../components/Flyer";
 import bobluddy from "../public/bobluddy.png";
+import nancyhall from "../public/nancyhall.png";
+import stone from "../public/stone.png";
+import raleighneuro from "../public/raleighneuro.png";
 import bryanpfohl from "../public/bryanpfohl.png";
 import frankholdingjr from "../public/frankholdingjr.png";
 import gregorypoole from "../public/gregorypoole.png";
@@ -104,21 +107,21 @@ const Donors = () => {
             </div>
             <div className="col-12 col-md-4 pb-3">
               <div className={`${styles.imageContainer} shadow`}>
-                <Image src={bobluddy} alt="" layout="responsive" objectFit="contain" />
+                <Image src={nancyhall} alt="" layout="responsive" objectFit="contain" />
               </div>
               <div className="fs-4 fw-bold py-1">Nancy Hall and The Lonnie and Carol Poole Family Foundation</div>
               <div className={`${styles.officerQuote} pb-5 fst-italic`}>"I believe that this police department (RPD) really does an amazing job in the ways that they are engaging in the community and that it is very important."</div>
             </div>
             <div className="col-12 col-md-4 pb-3">
               <div className={`${styles.imageContainer} shadow`}>
-                <Image src={bobluddy} alt="" layout="responsive" objectFit="contain" />
+                <Image src={stone} alt="" layout="responsive" objectFit="contain" />
               </div>
               <div className="fs-4 fw-bold py-1">Jim and Caroline Stone</div>
               <div className={`${styles.officerQuote} pb-5 fst-italic`}>"We have both grown up in Raleigh and took the police for granted, and now we feel like it is our turn to step up and support them."</div>
             </div>
             <div className="col-12 col-md-4 pb-3">
               <div className={`${styles.imageContainer} shadow`}>
-                <Image src={bobluddy} alt="" layout="responsive" objectFit="contain" />
+                <Image src={raleighneuro} alt="" layout="responsive" objectFit="contain" />
               </div>
               <div className="fs-4 fw-bold py-1">Dr. Tim Garner</div>
               <div className={`${styles.officerQuote} pb-1 fst-italic`}>Raleigh Neurosurgical Clinic</div>

@@ -51,7 +51,7 @@ const MeetRPD = () => {
               <div className={`${styles.imageContainer} shadow`} onClick={() => setModal3Show(true)}>
                 <Image src={KidderVideo} alt="" layout="responsive" objectFit="contain" />
               </div>
-              <div className="fs-4 fw-bold py-1">Chelsea Kidder</div>
+              <div className="fs-4 fw-bold py-1">Chelsea Baldy</div>
               <div className={`${styles.officerQuote} pb-5 fst-italic`}>"The community side of policing is what I’m really passionate about. Being out in the community changes your perspective and lets you really help each day."</div>
             </div>
             <div className="col-12 col-md-6 pb-3">
