@@ -12,7 +12,7 @@ import holden from "../public/fallenOfficers/holden.png";
 import lee from "../public/fallenOfficers/lee.png";
 import paul from "../public/fallenOfficers/paul.png";
 
-import heroImg from "../public/raleigh-city.png";
+import heroImg from "../public/salute_sm.png";
 import styles from "../styles/Fallen-Officers.module.scss";
 
 const fallenOfficers = [
