@@ -9,6 +9,10 @@ import {
 
 const ContactForm = () => {
   const [state, handleSubmit] = useForm("maykwabk");
+  const altButtonStyle = {
+    backgroundColor: 'white', // Change to any color you prefer
+    color: '#23578e', // Change to the desired text color
+  };
 
   return (
     <div id="contactForm" className="container my-5">
@@ -35,6 +39,27 @@ const ContactForm = () => {
                 info@raleighpolicefoundation.org
               </a>
             </span>
+          </div>
+          <div className="flex pt-3">
+            <label className="pb-2" htmlFor="joinMailList">Join Mailing List</label>
+            <span className="text-break ps-2">
+              <input
+                id="mailingEmail"
+                type="email"
+                name="emailaddress"
+                className="form-control"
+                placeholder="Email"
+                required={true}
+              />
+            </span>
+            <button
+              style={altButtonStyle}
+              className="btn btn-primary mt-2"
+              type="submit"
+              disabled={state.submitting}
+            >
+              Submit
+            </button>
           </div>
           <div className="social-icons pt-5 d-flex">
             <div className="pe-3 d-flex align-items-center">
@@ -153,11 +178,10 @@ const ContactForm = () => {
               ></textarea>
             </div>
             <div
-              className={`${
-                state.succeeded
-                  ? "justify-content-between"
-                  : "justify-content-end"
-              } d-flex  align-items-center pt-3`}
+              className={`${state.succeeded
+                ? "justify-content-between"
+                : "justify-content-end"
+                } d-flex  align-items-center pt-3`}
             >
               {state.succeeded && (
                 <div
