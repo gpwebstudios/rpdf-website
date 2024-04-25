@@ -23,7 +23,6 @@ const pageData = [
     description: "The RPDF helps to equip our police force with the resources they need to keep our communities safer and more secure through donations of critical equipment and initiatives that make a real difference.",
     buttonText: "See Our Efforts in Action",
     btnHref: '/Our-Work'
-
   },
   {
     imageSrc: tl3,
@@ -53,7 +52,9 @@ const InfoTimeline = () => {
                 <div
                   className={`${styles.imageWrapper} ${data.buttonText === 'Learn More' ? 'p-5' : 'p-5'} m-auto `}
                   onClick={() => data.buttonText === 'Learn More' && setModalShow(true)}>
-                  <Image src={data.imageSrc} alt="RPDF Logo" layout="responsive" />
+                  <Link href={data.btnHref}>
+                    <Image src={data.imageSrc} alt="RPDF Logo" layout="responsive" />
+                  </Link>
                 </div>
               </div>
               <div className={`col-md-6 text-center ${index % 2 == 0 ? '' : styles.colOrderFirst}`}>

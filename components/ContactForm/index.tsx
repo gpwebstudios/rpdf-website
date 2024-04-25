@@ -42,24 +42,24 @@ const ContactForm = () => {
           </div>
           <div className="flex pt-3">
             <label className="pb-2" htmlFor="joinMailList">Join Mailing List</label>
-            <span className="text-break ps-2">
+            <div className="d-flex align-items-center">
               <input
                 id="mailingEmail"
                 type="email"
                 name="emailaddress"
-                className="form-control"
+                className="form-control me-2"
                 placeholder="Email"
                 required={true}
               />
-            </span>
-            <button
-              style={altButtonStyle}
-              className="btn btn-primary mt-2"
-              type="submit"
-              disabled={state.submitting}
-            >
-              Submit
-            </button>
+              <button
+                style={altButtonStyle}
+                className="btn btn-primary"
+                type="submit"
+                disabled={state.submitting}
+              >
+                Submit
+              </button>
+            </div>
           </div>
           <div className="social-icons pt-5 d-flex">
             <div className="pe-3 d-flex align-items-center">
