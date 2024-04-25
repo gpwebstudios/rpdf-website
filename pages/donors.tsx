@@ -15,7 +15,7 @@ import ContactForm from "../components/ContactForm";
 import Footer from "../components/layout/Footer";
 import HeroImage from "../components/layout/HeroImage";
 import heroImg from "../public/support_sm.png";
-import flyer from "../public/rpdf-flyer.png";
+import flyer from "../public/rpdf-flyer2.png";
 
 
 const Donors = () => {

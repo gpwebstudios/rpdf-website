@@ -27,6 +27,7 @@ import SylviaWest from "../public/boardMembers/Sylvia-West.png"
 import TomFritsch from "../public/boardMembers/Tom-Fritsch.png"
 import BillBaker from "../public/boardMembers/Bill-Baker.png"
 import KadeRoss from "../public/boardMembers/Kade-Ross.png"
+import LTMcCrimmon from "../public/boardMembers/LTMcCrimmon.png"
 import chiefVideo from "../public/chiefVideo.png";
 import styles from "../styles/About.module.scss";
 
@@ -35,8 +36,8 @@ import styles from "../styles/About.module.scss";
 
 
 const bodOfficers = [
-  { name: "Brenda Gibson", position: 'President', background: 'Community Leader', imgSrc: BrendaGibson },
-  { name: "Christine Craig", position: 'Vice President', background: 'Vice President, Government Relations', background2: 'WakeMed Health & Hospitals', imgSrc: ChristineCraig },
+  { name: "Brenda Gibson", position: 'Chair', background: 'Community Leader', imgSrc: BrendaGibson },
+  { name: "Christine Craig", position: 'Vice Chair', background: 'Vice President, Government Relations', background2: 'WakeMed Health & Hospitals', imgSrc: ChristineCraig },
   { name: "Kristye Brackett", position: 'Secretary', background: 'Senior Counsel, CapDev', imgSrc: KristyeBrackett },
   { name: "Maurice Smith", position: 'Treasurer', background: 'Attorney & Counselor at Law, M Smith Law PLLC', imgSrc: MauriceSmith },
   { name: "Judy Zelnak", position: 'Executive Committee, Member-at-Large', background: 'Community Leader', imgSrc: JudyZelnak },
@@ -52,6 +53,7 @@ const bodMembers = [
   { name: "Laurie Geer", background: 'Community Leader', imgSrc: LaurieGeer },
   { name: "Gaffney Gunter", background: 'Owner/Operator, Gunter Enterprises Inc.', imgSrc: GaffneyGunter },
   { name: "Curry Huskes", background: 'Area Sales Manager, CPI Security', imgSrc: CurryHuskes },
+  { name: "LT McCrimmon", background: 'Senior Director, APCO', imgSrc: LTMcCrimmon },
   { name: "Bryan Pfohl", background: 'Chairman & CEO, Sunrock Group Holdings', imgSrc: BryanPfohl },
   { name: "Kade Ross", background: 'Chief Information Officer, Bandwidth', imgSrc: KadeRoss },
   { name: "Christina Alvarado Shanahan", background: 'RADM, US Navy (Ret)', imgSrc: TinaShanahan },
