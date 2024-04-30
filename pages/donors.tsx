@@ -143,8 +143,8 @@ const Donors = () => {
               <div className={`${styles.imageContainer} shadow`}>
                 <Image src={townebank} alt="" layout="responsive" objectFit="contain" />
               </div>
-              <div className="fs-4 fw-bold py-1">TowneBank</div>
-              {/* <div className={`${styles.officerQuote} pb-1 fst-italic`}>Towne Bank</div> */}
+              <div className="fs-4 fw-bold py-1">Brian Reid</div>
+              <div className={`${styles.officerQuote} pb-1 fst-italic`}>TowneBank</div>
               {/* <div className={`${styles.officerQuote} pb-5 fst-italic`}></div> */}
             </div>
           </div>
