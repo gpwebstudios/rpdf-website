@@ -11,9 +11,9 @@
     color: #4E5358;
   }
 
-  .timelineDotsContainer {
+  /* .timelineDotsContainer {
     position: absolute;
-  }
+  } */
 
 
 
@@ -33,7 +33,7 @@
 
 @media (min-width: 780px) {
   .infoTimeline {
-    background-image: url("/timeline-dots.svg");
+    /* background-image: url("/timeline-dots.svg"); */
     background-repeat: no-repeat;
     background-position: 25% 40%;
     background-size: 100% 80%;

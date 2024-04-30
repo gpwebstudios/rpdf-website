@@ -1,0 +1,171 @@
+.main {
+    min-height: 100vh;
+    padding: 4rem 0 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #dee2e6;
+    background-color: #23578E;
+    color: white;
+}
+
+.header {
+
+    background-color: #23578E;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.title2 {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 2.5rem;
+    max-width: 950px;
+    margin: auto;
+    padding: 1rem 0rem;
+}
+
+.title,
+.description {
+    text-align: center;
+}
+
+.description {
+    margin: 4rem 0;
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    margin: 1rem 2rem;
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    max-width: 500px;
+    max-height: 100%;
+    align-items: center;
+}
+
+.mw600{
+    max-width: 600px !important;
+}
+
+.mw700{
+    max-width: 700px !important;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+    border-color: gray;
+}
+
+.card h2 {
+    margin: 0 0 1rem 0;
+    font-size: 2rem;
+}
+
+.card p {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .grid {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+
+.section {
+    background-color: #f1f1f1;
+}
+
+.link {
+    // color: #1a375b;
+  }
+  
+
+/* .image {
+    min-width: 100%;
+    min-height: 50vh;
+    object-fit: contain;
+} */
+
+.center {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: auto;
+}
+
+.svg {
+    display: block;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: auto;
+    line-height: 1.15;
+    font-size: 1.5rem;
+    max-width: 950px;
+    padding: 1rem 0rem;
+}
+
+.text {
+    color: #727272;
+    padding: 1rem 0rem;
+}
+
+.hr {
+    width: 34vw;
+    border-top: 2px solid #23578E;
+    margin-left: auto;
+    margin-right: auto;
+    color: #23578E;
+}
+
+.textLightGray {
+    color: #868e96;
+  }
+
+  .title {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 1.25rem;
+    max-width: 950px;
+    margin: auto;
+    padding: 1rem 0rem;
+}
+
+.card {
+    margin: 1rem 2rem;
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    max-width: 500px;
+    max-height: 100%;
+    align-items: center;
+}
+
+.mw600{
+    max-width: 600px !important;
+}

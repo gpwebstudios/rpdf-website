@@ -5,6 +5,7 @@ import Footer from "../components/layout/Footer";
 import Navbar from "../components/layout/Navbar";
 import VideoModal from "../components/layout/VideoModal";
 import aboutUs from "../public/aboutUs.png";
+import aboutUs2 from "../public/aboutUs2.png";
 import BrendaGibson from "../public/boardMembers/Brenda-Gibson.png";
 import ChandlerSpaulding from "../public/boardMembers/Chandler-Spaulding.png";
 import ChristineCraig from "../public/boardMembers/Christine-Craig.png";
@@ -27,6 +28,7 @@ import SylviaWest from "../public/boardMembers/Sylvia-West.png"
 import TomFritsch from "../public/boardMembers/Tom-Fritsch.png"
 import BillBaker from "../public/boardMembers/Bill-Baker.png"
 import KadeRoss from "../public/boardMembers/Kade-Ross.png"
+import LTMcCrimmon from "../public/boardMembers/LTMcCrimmon.png"
 import chiefVideo from "../public/chiefVideo.png";
 import styles from "../styles/About.module.scss";
 
@@ -40,6 +42,7 @@ const bodOfficers = [
   { name: "Kristye Brackett", position: 'Secretary', background: 'Senior Counsel, CapDev', imgSrc: KristyeBrackett },
   { name: "Maurice Smith", position: 'Treasurer', background: 'Attorney & Counselor at Law, M Smith Law PLLC', imgSrc: MauriceSmith },
   { name: "Judy Zelnak", position: 'Executive Committee, Member-at-Large', background: 'Community Leader', imgSrc: JudyZelnak },
+  { name: "Mike Smith", position: 'Governance Chair', background: 'President, Kane Realty Group', imgSrc: MikeSmith },
 ];
 
 const bodMembers = [
@@ -51,11 +54,11 @@ const bodMembers = [
   { name: "Laurie Geer", background: 'Community Leader', imgSrc: LaurieGeer },
   { name: "Gaffney Gunter", background: 'Owner/Operator, Gunter Enterprises Inc.', imgSrc: GaffneyGunter },
   { name: "Curry Huskes", background: 'Area Sales Manager, CPI Security', imgSrc: CurryHuskes },
+  { name: "LT McCrimmon", background: 'Senior Director, APCO', imgSrc: LTMcCrimmon },
   { name: "Bryan Pfohl", background: 'Chairman & CEO, Sunrock Group Holdings', imgSrc: BryanPfohl },
   { name: "Kade Ross", background: 'Chief Information Officer, Bandwidth', imgSrc: KadeRoss },
   { name: "Christina Alvarado Shanahan", background: 'RADM, US Navy (Ret)', imgSrc: TinaShanahan },
   { name: "Temple Sloan, IV", background: 'Trail Creek Investments', imgSrc: TempleSloan },
-  { name: "Mike Smith", background: 'President, Kane Realty Group', imgSrc: MikeSmith },
   { name: "Chandler Spaulding", background: 'Director, Communications & Government Relations, Smith Anderson Law Firm', imgSrc: ChandlerSpaulding },
   { name: "Sylvia West", background: 'North Carolina Museum of History', imgSrc: SylviaWest },
 ];
@@ -110,7 +113,7 @@ const About = () => {
         <div className="row row-align-center">
           <div className="col-md-6">
             <div className={styles.imageWrapper}>
-              <Image src={aboutUs} alt="RPDF Logo" layout="responsive" priority={true} />
+              <Image src={aboutUs2} alt="RPDF Logo" layout="responsive" priority={true} />
             </div>
           </div>
           <div className={`${styles.aboutDescription} col-md-6`}>
@@ -165,7 +168,7 @@ const About = () => {
           ))}
         </div>
       </div>
-      <div className="container-fluid bg-light border-top pb-5">
+      {/* <div className="container-fluid bg-light border-top pb-5">
         <h2 className="text-center mt-5">Hear from Our Donors</h2>
         <div className={`container`}>
           <div className="row row-align-center my-3 g-5">
@@ -187,7 +190,7 @@ const About = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
 
       <ContactForm />
