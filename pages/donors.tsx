@@ -11,11 +11,14 @@ import frankholdingjr from "../public/frankholdingjr.png";
 import gregorypoole from "../public/gregorypoole.png";
 import larrybarbour from "../public/larrybarbour.png";
 import toddandlaura from "../public/toddandlaura.png";
+import townebank from "../public/townebank.png";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/layout/Footer";
 import HeroImage from "../components/layout/HeroImage";
 import heroImg from "../public/support_sm.png";
-import flyer from "../public/rpdf-flyer2.png";
+import flyer2 from "../public/rpdf-flyer2.png";
+import flyer from "../public/rpdf-flyer.png";
+
 
 
 const Donors = () => {
@@ -51,10 +54,10 @@ const Donors = () => {
         </h5>
       </div>
       <div
-        className={`${styles.card} ${styles.mw600}  mx-auto text-center p-2 my-5`}
+        className={`${styles.card} ${styles.mw700}  mx-auto text-center p-2 my-5`}
       >
         <Image
-          src={flyer}
+          src={flyer2}
           alt="Donor Flyer"
           className="border border-4 rounded-1"
           width={1000}
@@ -135,6 +138,14 @@ const Donors = () => {
               <div className={`${styles.officerQuote} pb-1 fst-italic`}>First Citizens Bank</div>
               <div className={`${styles.officerQuote} pb-5 fst-italic`}>"We contributed to the Raleigh Police Department Foundation
                 because of the great work the Raleigh Police Department does and we want to be a part of supporting them."</div>
+            </div>
+            <div className="col-12 col-md-4 pb-3">
+              <div className={`${styles.imageContainer} shadow`}>
+                <Image src={townebank} alt="" layout="responsive" objectFit="contain" />
+              </div>
+              <div className="fs-4 fw-bold py-1">TowneBank</div>
+              {/* <div className={`${styles.officerQuote} pb-1 fst-italic`}>Towne Bank</div> */}
+              {/* <div className={`${styles.officerQuote} pb-5 fst-italic`}></div> */}
             </div>
           </div>
         </div>

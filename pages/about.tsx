@@ -5,6 +5,7 @@ import Footer from "../components/layout/Footer";
 import Navbar from "../components/layout/Navbar";
 import VideoModal from "../components/layout/VideoModal";
 import aboutUs from "../public/aboutUs.png";
+import aboutUs2 from "../public/aboutUs2.png";
 import BrendaGibson from "../public/boardMembers/Brenda-Gibson.png";
 import ChandlerSpaulding from "../public/boardMembers/Chandler-Spaulding.png";
 import ChristineCraig from "../public/boardMembers/Christine-Craig.png";
@@ -112,7 +113,7 @@ const About = () => {
         <div className="row row-align-center">
           <div className="col-md-6">
             <div className={styles.imageWrapper}>
-              <Image src={aboutUs} alt="RPDF Logo" layout="responsive" priority={true} />
+              <Image src={aboutUs2} alt="RPDF Logo" layout="responsive" priority={true} />
             </div>
           </div>
           <div className={`${styles.aboutDescription} col-md-6`}>
