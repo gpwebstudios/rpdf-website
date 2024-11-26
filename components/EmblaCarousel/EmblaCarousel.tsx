@@ -9,6 +9,9 @@ import { DotButton } from "./EmblaCarouselButtons";
 
 const carouselContent = [
   {
+    header: '', content: '', buttonHref: ''
+  },
+  {
     header: 'Supporting Our Heroes', content: 'We are proud to support the Raleigh Police Department', buttonHref: '/Meet-RPD'
   },
   {
@@ -29,8 +32,7 @@ const EmblaCarousel = ({ slides }: { slides: any }) => {
   );
 
 
-
-  const [viewportRef, embla] = useEmblaCarousel({ skipSnaps: false }, [autoplay.current]);
+  const [viewportRef, embla] = useEmblaCarousel({ skipSnaps: false }, /* [autoplay.current] */);
 
   const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
   const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
@@ -65,8 +67,8 @@ const EmblaCarousel = ({ slides }: { slides: any }) => {
         <div className="embla__viewport" ref={viewportRef}>
           <div className="embla__container">
             {slides.map((index: number) => (
-              <div className="embla__slide" key={index}>
-                <div className="embla__slide__inner">
+              <div className="embla__slide" key={index}>  
+                <div className={`embla__slide__inner ${index === 0 ? 'embla__slide__inner_first' : ''}`}>
 
                   <Image
                     className="embla__slide__img"
@@ -76,7 +78,7 @@ const EmblaCarousel = ({ slides }: { slides: any }) => {
                     priority={index === 0}
                   />
 
-                  <div className={'slide-content container'}>
+                  <div className={`slide-content container ${index === 0 ? 'slide-content-first' : ''}`}>
                     <h2 className="slide-content-max-w">{carouselContent[index].header}</h2>
                     <p className="mt-1 mb-4 slide-content-max-w">{carouselContent[index].content}</p>
                     <Link href={carouselContent[index].buttonHref}>
