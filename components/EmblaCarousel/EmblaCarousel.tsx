@@ -9,7 +9,7 @@ import { DotButton } from "./EmblaCarouselButtons";
 
 const carouselContent = [
   {
-    header: '', content: '', buttonHref: ''
+    header: '', content: '', buttonHref: '/HTB'
   },
   {
     header: 'Supporting Our Heroes', content: 'We are proud to support the Raleigh Police Department', buttonHref: '/Meet-RPD'
