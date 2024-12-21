@@ -7,9 +7,10 @@ import InfoTimeline from "../components/InfoTimeline";
 import Footer from "../components/layout/Footer";
 import Navbar from "../components/layout/Navbar";
 import styles from "../styles/Home.module.scss";
+import HonorTheBadge from "../components/HonorTheBadge";
 
 
-const SLIDE_COUNT = 3;
+const SLIDE_COUNT = 4;
 const slides = Array.from(Array(SLIDE_COUNT).keys());
 
 const Home: NextPage = () => {
