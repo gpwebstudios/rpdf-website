@@ -35,6 +35,7 @@
       align-items: center;
       /* Horizontally center text */
       z-index: 2;
+      width: 100%;
   }
 
   .hero_text {
@@ -80,6 +81,13 @@
   }
 
   @media (max-width: 680px) {
+    .hero_text {
+        font-size: 2rem !important;
+        /* Adjust text size for large screens */
+    }
+}
+
+@media (max-width: 480px) {
     .hero_text {
         font-size: 2rem !important;
         /* Adjust text size for large screens */
