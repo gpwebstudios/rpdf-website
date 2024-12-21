@@ -22,16 +22,19 @@
   }
 
   .heroTextContainer {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    display: flex;
-    flex-direction: column; /* This makes the text stack vertically */
-    justify-content: center; /* Vertically center text inside the container */
-    align-items: center; /* Horizontally center text */
-    z-index: 2;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      /* This makes the text stack vertically */
+      justify-content: center;
+      /* Vertically center text inside the container */
+      align-items: center;
+      /* Horizontally center text */
+      z-index: 2;
   }
 
   .hero_text {
@@ -47,8 +50,9 @@
           font-size: 3.5rem;
           /* Larger text for larger screens */
       }
+
       .heroImageContainer {
-        height: 20vh;
+          height: 20vh;
       }
   }
 
@@ -59,7 +63,7 @@
       }
 
       .heroTextContainer {
-        padding-top: 0%;
+          padding-top: 0%;
       }
 
       .hero_text {
@@ -68,9 +72,16 @@
       }
   }
 
-  @media (max-width: 1357px) {
+  @media (max-width: 1500px) {
+      .hero_text {
+          font-size: 2.5rem !important;
+          /* Adjust text size for large screens */
+      }
+  }
+
+  @media (max-width: 680px) {
     .hero_text {
-        font-size: 3rem !important;
+        font-size: 2rem !important;
         /* Adjust text size for large screens */
     }
 }
