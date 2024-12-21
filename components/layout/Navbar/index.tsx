@@ -5,14 +5,17 @@ import logo from '/public/logo.svg'
 import styles from "./navbar.module.scss";
 
 const navData = [
-  { linkText: "About Us", href: '/about' },
-  { linkText: "Our Work", href: '/Our-Work' },
-  { linkText: "Meet the RPD", href: '/Meet-RPD' },
-  { linkText: "Donors", href: '/donors' },
-  { linkText: "Press", href: '/press' },
-  { linkText: "Fallen Officers", href: '/fallen-officers' },
-  { linkText: "Contact", href: '#contactForm' },
-
+  { linkText: "About Us", href: '#', subMenu: [
+    { linkText: "About", href: '/about' },
+    { linkText: "Our Work", href: '/Our-Work' },
+    { linkText: "Press", href: '/press' },
+    { linkText: "Contact", href: '#contactForm' }
+  ]
+},
+{ linkText: "Meet the RPD", href: '/Meet-RPD' },
+{ linkText: "Donors", href: '/donors' },
+{ linkText: "Fallen Officers", href: '/fallen-officers' },
+{ linkText: "Honor the Badge", href: '/htb' },
 ]
 
 const Navbar = () => {
@@ -31,11 +34,30 @@ const Navbar = () => {
         <div className="collapse navbar-collapse justify-content-end" id="rpdfNavbar">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             {navData.map((data, index) => (
-              <li className={`nav-item ${index == 5 ? 'pe-2' : ''}`} key={index}>
-                <Link href={data.href}>
-                  <a className={`${router.pathname === data.href ? "active" : ""} nav-link`}>{data.linkText}</a>
-                </Link>
-              </li>
+              data.subMenu ? (
+                <li className="nav-item dropdown" key={index}>
+                  <a className={`nav-link dropdown-toggle ${router.pathname === data.href ? "active" : ""}`} href={data.href} id={`navbarDropdown${index}`} role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    {data.linkText}
+                  </a>
+                  <ul className="dropdown-menu" aria-labelledby={`navbarDropdown${index}`}>
+                    {data.subMenu.map((subData, subIndex) => (
+                      <li key={subIndex}>
+                        <Link href={subData.href}>
+                          <a className={`dropdown-item ${router.pathname === subData.href ? "active" : ""}`}>{subData.linkText}</a>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              ) : (
+                <li className="nav-item" key={index}>
+                  <Link href={data.href}>
+                    <a className={`nav-link ${router.pathname === data.href ? "active" : ""}`}>
+                      {data.linkText}
+                    </a>
+                  </Link>
+                </li>
+              )
             ))}
             <li className="nav-item">
               <a target="_blank" href="https://www.paypal.com/donate/?hosted_button_id=W37M2CD6UA62Y" rel="noreferrer">
@@ -47,6 +69,6 @@ const Navbar = () => {
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;

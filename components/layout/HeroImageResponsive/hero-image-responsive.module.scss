@@ -21,23 +21,30 @@
       height: 100%;
   }
 
+  .heroTextContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* This makes the text stack vertically */
+    justify-content: center; /* Vertically center text inside the container */
+    align-items: center; /* Horizontally center text */
+    z-index: 2;
+  }
+
   .hero_text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       color: white;
-      /* Text color */
-      /* font-size: 3rem; */
-      /* Adjust text size as needed */
-      z-index: 2;
       text-align: center;
       width: 100%;
+      padding: 5px 0;
+      margin: 0;
   }
 
   @media (min-width: 768px) {
       .hero_text {
-          font-size: 4rem;
+          font-size: 3.5rem;
           /* Larger text for larger screens */
       }
       .heroImageContainer {
@@ -51,8 +58,19 @@
           /* Adjust aspect ratio for larger screens if needed */
       }
 
+      .heroTextContainer {
+        padding-top: 0%;
+      }
+
       .hero_text {
-          font-size: 5rem;
+          font-size: 3.5rem;
           /* Adjust text size for large screens */
       }
   }
+
+  @media (max-width: 1357px) {
+    .hero_text {
+        font-size: 3rem !important;
+        /* Adjust text size for large screens */
+    }
+}

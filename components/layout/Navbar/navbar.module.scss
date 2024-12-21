@@ -13,6 +13,9 @@
   .active {
     font-weight: 700;
     border-color: #F8B513 !important;
+    color: #1A375B !important;
+    background-color: #FFF !important;
+
   }
 
 
@@ -20,4 +23,36 @@
     .logoLink {
       max-width: 300px !important;
     }
+  }
+
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Ensures the dropdown stays visible when hovering */
+  }
+  
+  .dropdown-menu {
+    border-radius: 1px;
+  }
+  
+  .dropdown-item {
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #1A375B;
+  }
+
+  .dropdown-item.active {
+    font-weight: 700;
+    border-color: #F8B513 !important;
+    color: #1A375B !important;
+    background-color: #FFF !important;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #989898;
+  }
+  
+  .navbar-nav .nav-link.active {
+    color: #1A375B !important;
+    background-color: #FFF !important;
+    font-weight: 700 !important;
+    border-color: #F8B513 !important;
   }
