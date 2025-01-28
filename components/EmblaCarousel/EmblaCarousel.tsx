@@ -81,11 +81,11 @@ const EmblaCarousel = ({ slides }: { slides: any }) => {
                   <div className={`slide-content container ${index === 0 ? 'slide-content-first' : ''}`}>
                     <h2 className="slide-content-max-w">{carouselContent[index].header}</h2>
                     <p className={`mt-1 mb-4 slide-content-max-w`}>{carouselContent[index].content}</p>
-                    <Link href={carouselContent[index].buttonHref}>
+                    {/* <Link href={carouselContent[index].buttonHref}>
                       <button className="btn btn-outline-light">
                         Learn More
                       </button>
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </div>

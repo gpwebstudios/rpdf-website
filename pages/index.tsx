@@ -8,6 +8,7 @@ import Footer from "../components/layout/Footer";
 import Navbar from "../components/layout/Navbar";
 import styles from "../styles/Home.module.scss";
 import HonorTheBadge from "../components/HonorTheBadge";
+import NotificationBanner from "../components/NotificationBanner/banner";
 
 
 const SLIDE_COUNT = 4;
@@ -26,6 +27,7 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <NotificationBanner />
       <Navbar />
       <EmblaCarousel slides={slides} />
       <InfoTimeline />
