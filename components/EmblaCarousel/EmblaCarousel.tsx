@@ -9,6 +9,9 @@ import { DotButton } from "./EmblaCarouselButtons";
 
 const carouselContent = [
   {
+    header: 'Battle of The Badges', content: 'test', buttonHref: '/botb'
+  },
+  {
     header: 'Honor the Badge', content: 'Celebrate Someone Special, Make a Lasting Impact', buttonHref: '/htb'
   },
   {
@@ -23,7 +26,7 @@ const carouselContent = [
 ]
 
 const EmblaCarousel = ({ slides }: { slides: any }) => {
-  const autoplayOptions: any = [{ delay: 5000, stopOnInteraction: false },
+  const autoplayOptions: any = [{ delay: 5000, stopOnInteraction: true, disableOnInteraction: true, userPause: true},
   (emblaRoot: { parentElement: any; }) => emblaRoot.parentElement];
   const autoplay = useRef(
     Autoplay(
@@ -68,7 +71,7 @@ const EmblaCarousel = ({ slides }: { slides: any }) => {
           <div className="embla__container">
             {slides.map((index: number) => (
               <div className="embla__slide" key={index}>  
-                <div className={`embla__slide__inner ${index === 0 ? 'embla__slide__inner_first' : ''}`}>
+                <div className={`embla__slide__inner ${index === 1 ? 'embla__slide__inner_first' : ''}`}>
 
                   <Image
                     className="embla__slide__img"
@@ -78,14 +81,14 @@ const EmblaCarousel = ({ slides }: { slides: any }) => {
                     priority={index === 0}
                   />
 
-                  <div className={`slide-content container ${index === 0 ? 'slide-content-first' : ''}`}>
+                  <div className={`slide-content container ${index === 1 ? 'slide-content-first' : ''}`}>
                     <h2 className="slide-content-max-w">{carouselContent[index].header}</h2>
                     <p className={`mt-1 mb-4 slide-content-max-w`}>{carouselContent[index].content}</p>
-                    {/* <Link href={carouselContent[index].buttonHref}>
+                    <Link href={carouselContent[index].buttonHref}>
                       <button className="btn btn-outline-light">
                         Learn More
                       </button>
-                    </Link> */}
+                    </Link>
                   </div>
                 </div>
               </div>
