@@ -27,8 +27,7 @@ const BOTB = () => {
                             </div>
                             <div className="pt-1 mt-3 pb-3 border-bottom text-center">
                                 <p className={styles.paragraph}>You can learn more about the Raleigh Police Department Foundation and how you can help via the link below, select Officer Gillick in the drop down to donate to his cause.</p>
-                                <a href="https://www.paypal.com/donate/?hosted_button_id=ZEWB49DX3C6SW" className={`btn btn-primary px-5 mt-3`}>Donate to RPDF and Officer Gillick</a>
-                                <p className={styles.text}><i>Please leave gift details on the second page of your checkout process. An acknowledgment card will be sent to the name and address provided.</i></p>
+                                <a href="https://www.paypal.com/donate/?hosted_button_id=9Q9VAR2DUTRAJ" className={`btn btn-primary px-5 mt-3`}>Donate to RPDF and Officer Gillick</a>
                             </div>
                         </div>
 
