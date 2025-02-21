@@ -9,7 +9,7 @@ import { DotButton } from "./EmblaCarouselButtons";
 
 const carouselContent = [
   {
-    header: 'Battle of The Badges', content: 'test', buttonHref: '/botb'
+    header: 'Battle of The Badges', content: 'Join us at the Lenovo Center on April 1, 2025, at 7:00 PM. All proceeds will benefit Officer Gillick.', buttonHref: '/botb'
   },
   {
     header: 'Honor the Badge', content: 'Celebrate Someone Special, Make a Lasting Impact', buttonHref: '/htb'

@@ -1,4 +1,4 @@
-import media1 from "./botb2.png";
+import media1 from "./bgBlue.png";
 import media2 from "./htbbanner.png";
 import media3 from "./rpdf-hero-1.png";
 import media4 from "./rpdf-hero-2.png";
