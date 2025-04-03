@@ -11,7 +11,7 @@ import HonorTheBadge from "../components/HonorTheBadge";
 import NotificationBanner from "../components/NotificationBanner/banner";
 
 
-const SLIDE_COUNT = 5;
+const SLIDE_COUNT = 4;
 const slides = Array.from(Array(SLIDE_COUNT).keys());
 
 const Home: NextPage = () => {

@@ -8,9 +8,9 @@ import { DotButton } from "./EmblaCarouselButtons";
 
 
 const carouselContent = [
-  {
+/*   {
     header: 'Battle of The Badges', content: 'Join us at the Lenovo Center on April 1, 2025, at 7:00 PM. All proceeds will benefit Officer Gillick.', buttonHref: '/botb'
-  },
+  }, */
   {
     header: 'Honor the Badge', content: 'Celebrate Someone Special, Make a Lasting Impact', buttonHref: '/htb'
   },
@@ -71,7 +71,7 @@ const EmblaCarousel = ({ slides }: { slides: any }) => {
           <div className="embla__container">
             {slides.map((index: number) => (
               <div className="embla__slide" key={index}>  
-                <div className={`embla__slide__inner ${index === 1 ? 'embla__slide__inner_first' : ''}`}>
+                <div className={`embla__slide__inner ${index === 0 ? 'embla__slide__inner_first' : ''}`}>
 
                   <Image
                     className="embla__slide__img"
@@ -81,7 +81,7 @@ const EmblaCarousel = ({ slides }: { slides: any }) => {
                     priority={index === 0}
                   />
 
-                  <div className={`slide-content container ${index === 1 ? 'slide-content-first' : ''}`}>
+                  <div className={`slide-content container ${index === 0 ? 'slide-content-first' : ''}`}>
                     <h2 className="slide-content-max-w">{carouselContent[index].header}</h2>
                     <p className={`mt-1 mb-4 slide-content-max-w`}>{carouselContent[index].content}</p>
                     <Link href={carouselContent[index].buttonHref}>
