@@ -27,7 +27,7 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <NotificationBanner />
+      {/* <NotificationBanner /> */}
       <Navbar />
       <EmblaCarousel slides={slides} />
       <InfoTimeline />
