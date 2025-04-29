@@ -29,6 +29,7 @@ import TomFritsch from "../public/boardMembers/Tom-Fritsch.png"
 import BillBaker from "../public/boardMembers/Bill-Baker.png"
 import KadeRoss from "../public/boardMembers/Kade-Ross.png"
 import LTMcCrimmon from "../public/boardMembers/LTMcCrimmon.png"
+import GregCarr from "../public/boardMembers/Greg-Carr.png"
 import chiefVideo from "../public/chiefVideo.png";
 import styles from "../styles/About.module.scss";
 
@@ -43,11 +44,13 @@ const bodOfficers = [
   { name: "Maurice Smith", position: 'Treasurer', background: 'Attorney & Counselor at Law, M Smith Law PLLC', imgSrc: MauriceSmith },
   { name: "Judy Zelnak", position: 'Executive Committee, Member-at-Large', background: 'Community Leader', imgSrc: JudyZelnak },
   { name: "Mike Smith", position: 'Governance Chair', background: 'President, Kane Realty Group', imgSrc: MikeSmith },
+  { name: "Kade Ross", position: 'Member-at-Large', background: 'Chief Information Officer, Bandwidth', imgSrc: KadeRoss },
 ];
 
 const bodMembers = [
   { name: "Bill Baker", background: 'Development Partner, Keith Corporation', imgSrc: BillBaker },
   { name: "Larry Barbour", background: 'President & CEO, North State Bank', imgSrc: LarryBarbour },
+  { name: "Greg Carr", background: 'EVP, Executive Director Comerica Bank', imgSrc: GregCarr },
   { name: "Scott Duckworth", background: 'Regional President, Brasfield & Gorrie', imgSrc: ScottDuckworth },
   { name: "Tom Fritsch", background: 'Senior Managing Director, CBRE', imgSrc: TomFritsch },
   { name: "Dr. Tim Garner", background: 'Raleigh Neurosurgical Clinic', imgSrc: TimGarner },
@@ -56,7 +59,6 @@ const bodMembers = [
   { name: "Curry Huskes", background: 'Area Sales Manager, CPI Security', imgSrc: CurryHuskes },
   { name: "LT McCrimmon", background: 'Senior Director, APCO', imgSrc: LTMcCrimmon },
   { name: "Bryan Pfohl", background: 'Chairman & CEO, Sunrock Group Holdings', imgSrc: BryanPfohl },
-  { name: "Kade Ross", background: 'Chief Information Officer, Bandwidth', imgSrc: KadeRoss },
   { name: "Christina Alvarado Shanahan", background: 'RADM, US Navy (Ret)', imgSrc: TinaShanahan },
   { name: "Temple Sloan, IV", background: 'Trail Creek Investments', imgSrc: TempleSloan },
   { name: "Chandler Spaulding", background: 'Director, Communications & Government Relations, Smith Anderson Law Firm', imgSrc: ChandlerSpaulding },
