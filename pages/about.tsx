@@ -9,7 +9,6 @@ import aboutUs2 from "../public/aboutUs2.png";
 import BrendaGibson from "../public/boardMembers/Brenda-Gibson.png";
 import ChandlerSpaulding from "../public/boardMembers/Chandler-Spaulding.png";
 import ChristineCraig from "../public/boardMembers/Christine-Craig.png";
-import CurryHuskes from "../public/boardMembers/Curry-Huskes.png";
 import GaffneyGunter from "../public/boardMembers/Gaffney-Gunter.png";
 import JudyZelnak from "../public/boardMembers/Judy-Zelnak.png";
 import KristyeBrackett from "../public/boardMembers/Kristye-Brackett.png";
@@ -56,7 +55,6 @@ const bodMembers = [
   { name: "Dr. Tim Garner", background: 'Raleigh Neurosurgical Clinic', imgSrc: TimGarner },
   { name: "Laurie Geer", background: 'Community Leader', imgSrc: LaurieGeer },
   { name: "Gaffney Gunter", background: 'Owner/Operator, Gunter Enterprises Inc.', imgSrc: GaffneyGunter },
-  { name: "Curry Huskes", background: 'Area Sales Manager, CPI Security', imgSrc: CurryHuskes },
   { name: "LT McCrimmon", background: 'Senior Director, APCO', imgSrc: LTMcCrimmon },
   { name: "Bryan Pfohl", background: 'Chairman & CEO, Sunrock Group Holdings', imgSrc: BryanPfohl },
   { name: "Christina Alvarado Shanahan", background: 'RADM, US Navy (Ret)', imgSrc: TinaShanahan },
